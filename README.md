@@ -11,7 +11,7 @@
 | Saathvika Ajith | [@Saathvika-Ajith](https://github.com/Saathvika-Ajith) | [Tickets](https://github.com/PranaviInukurti/flask_portfolio/projects/1?card_filter_query=assignee%3Asaathvika-ajith) | [Scrum Board](https://github.com/PranaviInukurti/flask_portfolio/projects/1?card_filter_query=assignee%3Asaathvika-ajith) | [Commits](https://github.com/PranaviInukurti/flask_portfolio/commits?author=Saathvika-Ajith)
 |  | [@  ](  ) | [Tickets](  ) |[Scrum Board](  ) | [Commits](  )
 |  | [@  ](  ) | [Tickets](  ) |[Scrum Board](  ) | [Commits](  )
-|  | [@  ](  ) | [Tickets](  ) |[Scrum Board](  ) | [Commits](  )
+| Daniel Tsivkovski | [@dtsivkovski](https://github.com/dtsivkovski/) | [Tickets]() |[Scrum Board]() | [Commits](https://github.com/LindaLiu1202/just_cakes/commits?author=dtsivkovski)
 
 
 ---
