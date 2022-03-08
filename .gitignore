@@ -1,6 +1,17 @@
-/.idea/.gitignore
-/.idea/aws.xml
-/.idea/flask_portfolio.iml
-/.idea/misc.xml
-/.idea/modules.xml
-/.idea/vcs.xml
+# /.idea/.gitignore
+# /.idea/aws.xml
+# /.idea/flask_portfolio.iml
+# /.idea/misc.xml
+# /.idea/modules.xml
+# /.idea/vcs.xml
+*.idea
+*.lws
+*.iml
+*.ipr
+*.xml
+__pycache__/
+.vscode/
+*.pyc
+routes/__pycache__/
+routes/__pycache__/
+.venv/
