@@ -5,8 +5,8 @@
 ## [Insights with Contributors and Commits]( https://github.com/LindaLiu1202/just_cakes/graphs/contributors )
 --- 
 ###   <h2 id="contributers">Contributors</h2>
-| Name | GitHub ID and Profile | Tickets | Scrum Board | Commits |
-|:----:|:----------------------|:-----:|:-----------:|:-------:|
+| Name | GitHub ID and Profile | Scrum Board | Commits |
+|:----:|:----------------------|:-----------:|:-------:|
 | Linda Liu | [@LindaLiu1202](https://github.com/LindaLiu1202) |[Scrum Board](https://github.com/PranaviInukurti/flask_portfolio/projects/1?card_filter_query=assignee%3Alindaliu1202) | [Commits](https://github.com/samayass/flask_portfolio/commits?author=LindaLiu1202)
 | Saathvika Ajith | [@Saathvika-Ajith](https://github.com/Saathvika-Ajith) | [Scrum Board](https://github.com/PranaviInukurti/flask_portfolio/projects/1?card_filter_query=assignee%3Asaathvika-ajith) | [Commits](https://github.com/PranaviInukurti/flask_portfolio/commits?author=Saathvika-Ajith)
 | Isabella Yan | [@isabella](https://github.com/yqw7  )  |[Scrum Board](  ) | [Commits](  )
