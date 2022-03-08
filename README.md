@@ -3,8 +3,6 @@
 ---
 ## [Scrum Board](  )
 ## [Insights with Contributors and Commits]( https://github.com/LindaLiu1202/just_cakes/graphs/contributors )
-## [Daily Journal -   ](  ) 
-## [Daily Journal -   ](  ) 
 --- 
 ###   <h2 id="contributers">Contributors</h2>
 | Name | GitHub ID and Profile | Tickets | Scrum Board | Commits |
