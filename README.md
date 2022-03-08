@@ -2,7 +2,7 @@
 ### AP CSP P4: Team Just-Here-For-Cake
 ---
 ## [Scrum Board](  )
-## [Insights with Contributors and Commits](  )
+## [Insights with Contributors and Commits]( https://github.com/LindaLiu1202/just_cakes/graphs/contributors )
 ## [Daily Journal -   ](  ) 
 ## [Daily Journal -   ](  ) 
 --- 
