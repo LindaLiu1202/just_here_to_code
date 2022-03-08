@@ -5,13 +5,13 @@
 ## [Insights with Contributors and Commits]( https://github.com/LindaLiu1202/just_cakes/graphs/contributors )
 --- 
 ###   <h2 id="contributers">Contributors</h2>
-| Name | GitHub ID and Profile | Tickets | Scrum Board | Commits |
-|:----:|:----------------------|:-----:|:-----------:|:-------:|
-| Linda Liu | [@LindaLiu1202](https://github.com/LindaLiu1202) | [Tickets](https://github.com/PranaviInukurti/flask_portfolio/projects/1?card_filter_query=assignee%3Alindaliu1202) |[Scrum Board](https://github.com/PranaviInukurti/flask_portfolio/projects/1?card_filter_query=assignee%3Alindaliu1202) | [Commits](https://github.com/samayass/flask_portfolio/commits?author=LindaLiu1202)
-| Saathvika Ajith | [@Saathvika-Ajith](https://github.com/Saathvika-Ajith) | [Tickets](https://github.com/PranaviInukurti/flask_portfolio/projects/1?card_filter_query=assignee%3Asaathvika-ajith) | [Scrum Board](https://github.com/PranaviInukurti/flask_portfolio/projects/1?card_filter_query=assignee%3Asaathvika-ajith) | [Commits](https://github.com/PranaviInukurti/flask_portfolio/commits?author=Saathvika-Ajith)
-|  | [@  ](  ) | [Tickets](  ) |[Scrum Board](  ) | [Commits](  )
-|  | [@  ](  ) | [Tickets](  ) |[Scrum Board](  ) | [Commits](  )
-| Daniel Tsivkovski | [@dtsivkovski](https://github.com/dtsivkovski/) | [Tickets]() |[Scrum Board]() | [Commits](https://github.com/LindaLiu1202/just_cakes/commits?author=dtsivkovski)
+| Name | GitHub ID and Profile | Scrum Board | Commits |
+|:----:|:----------------------|:-----------:|:-------:|
+| Linda Liu | [@LindaLiu1202](https://github.com/LindaLiu1202) |[Scrum Board](https://github.com/PranaviInukurti/flask_portfolio/projects/1?card_filter_query=assignee%3Alindaliu1202) | [Commits](https://github.com/samayass/flask_portfolio/commits?author=LindaLiu1202)
+| Saathvika Ajith | [@Saathvika-Ajith](https://github.com/Saathvika-Ajith) | [Scrum Board](https://github.com/PranaviInukurti/flask_portfolio/projects/1?card_filter_query=assignee%3Asaathvika-ajith) | [Commits](https://github.com/PranaviInukurti/flask_portfolio/commits?author=Saathvika-Ajith)
+| Isabella Yan | [@isabella](https://github.com/yqw7  )  |[Scrum Board](  ) | [Commits](  )
+| Daniel Tsivkovski | [@Daniel Tsivkovski](https://github.com/dtsivkovski)  |[Scrum Board](  ) | [Commits](https://github.com/LindaLiu1202/just_cakes/commits?author=dtsivkovski)
+| Jason Ott | [@JasonO12]( https://github.com/JasonO12 )  |[Scrum Board](  ) | [Commits](  )
 
 
 ---
@@ -26,9 +26,9 @@
 |:----:|:-----------:|:--------:|:-----:|
 | Linda Liu |  |<a href="  ">Ticket</a><br>|/5|
 | Saathvika Ajith |  |<a href="  ">Ticket</a><br>|/5|
-|   |  |<a href="  ">Ticket</a><br>|/5|
-|   |  |<a href="  ">Ticket</a><br>|/5|
-|   |  |<a href="  ">Ticket</a><br>|/5|
+| Isabella Yan  |  |<a href="  ">Ticket</a><br>|/5|
+| Daniel Tsivkovski  |  |<a href="  ">Ticket</a><br>|/5|
+| Jason Ott  |  |<a href="  ">Ticket</a><br>|/5|
 
 - Individual Scoring
 
@@ -36,6 +36,6 @@
 |:----:|:---------------------------:|:-----:|
 | Linda Liu | <a href="  ">Journal</a> | /5 |
 | Saathvika Ajith | <a href="  ">Journal</a> | /5 |
-|    | <a href="  ">Journal</a> |  /5 |
-|    | <a href="  ">Journal</a> | /5 |
-|    | <a href="  ">Journal</a> | /5 |
+| Isabella Yan   | <a href="  ">Journal</a> |  /5 |
+| Daniel Tsivkovski  | <a href="  ">Journal</a> | /5 |
+| Jason Ott   | <a href="  ">Journal</a> | /5 |
