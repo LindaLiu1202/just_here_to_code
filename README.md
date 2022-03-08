@@ -7,12 +7,11 @@
 ###   <h2 id="contributers">Contributors</h2>
 | Name | GitHub ID and Profile | Scrum Board | Commits |
 |:----:|:----------------------|:-----------:|:-------:|
-| Linda Liu | [@LindaLiu1202](https://github.com/LindaLiu1202) |[Scrum Board](https://github.com/PranaviInukurti/flask_portfolio/projects/1?card_filter_query=assignee%3Alindaliu1202) | [Commits](https://github.com/samayass/flask_portfolio/commits?author=LindaLiu1202)
-| Saathvika Ajith | [@Saathvika-Ajith](https://github.com/Saathvika-Ajith) | [Scrum Board](https://github.com/PranaviInukurti/flask_portfolio/projects/1?card_filter_query=assignee%3Asaathvika-ajith) | [Commits](https://github.com/PranaviInukurti/flask_portfolio/commits?author=Saathvika-Ajith)
-| Isabella Yan | [@isabella](https://github.com/yqw7  )  |[Scrum Board](  ) | [Commits](  )
-| Daniel Tsivkovski | [@Daniel Tsivkovski](https://github.com/dtsivkovski)  |[Scrum Board](  ) | [Commits](https://github.com/LindaLiu1202/just_cakes/commits?author=dtsivkovski)
-| Jason Ott | [@JasonO12]( https://github.com/JasonO12 )  |[Scrum Board](  ) | [Commits](  )
-
+| Linda Liu | [@LindaLiu1202](https://github.com/LindaLiu1202) |[Scrum Board](https://github.com/PranaviInukurti/flask_portfolio/projects/1?card_filter_query=assignee%3Alindaliu1202) | [Commits](https://github.com/LindaLiu1202/just_cakes/commits?author=LindaLiu1202)
+| Saathvika Ajith | [@Saathvika-Ajith](https://github.com/Saathvika-Ajith) | [Scrum Board](https://github.com/PranaviInukurti/flask_portfolio/projects/1?card_filter_query=assignee%3Asaathvika-ajith) | [Commits](https://github.com/LindaLiu1202/just_cakes/commits?author=Saathvika-Ajith)
+| Isabella Yan | [@isabella](https://github.com/yqw7  )  |[Scrum Board](  ) | [Commits]( https://github.com/LindaLiu1202/just_cakes/commits?author=isabella )
+| Daniel Tsivkovski | [@Daniel Tsivkovski](https://github.com/dtsivkovski)  |[Scrum Board](  ) | [Commits]( https://github.com/LindaLiu1202/just_cakes/commits?author=Daniel Tsivkovski )
+| Jason Ott | [@JasonO12]( https://github.com/JasonO12 )  |[Scrum Board](  ) | [Commits]( https://github.com/LindaLiu1202/just_cakes/commits?author=JasonO12  )
 
 ---
 ## Table of Contents
