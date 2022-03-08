@@ -10,7 +10,7 @@
 | Linda Liu | [@LindaLiu1202](https://github.com/LindaLiu1202) |[Scrum Board](https://github.com/PranaviInukurti/flask_portfolio/projects/1?card_filter_query=assignee%3Alindaliu1202) | [Commits](https://github.com/LindaLiu1202/just_cakes/commits?author=LindaLiu1202)
 | Saathvika Ajith | [@Saathvika-Ajith](https://github.com/Saathvika-Ajith) | [Scrum Board](https://github.com/PranaviInukurti/flask_portfolio/projects/1?card_filter_query=assignee%3Asaathvika-ajith) | [Commits](https://github.com/LindaLiu1202/just_cakes/commits?author=Saathvika-Ajith)
 | Isabella Yan | [@isabella](https://github.com/yqw7  )  |[Scrum Board](  ) | [Commits]( https://github.com/LindaLiu1202/just_cakes/commits?author=isabella )
-| Daniel Tsivkovski | [@Daniel Tsivkovski](https://github.com/dtsivkovski)  |[Scrum Board](  ) | [Commits]( https://github.com/LindaLiu1202/just_cakes/commits?author=Daniel Tsivkovski )
+| Daniel Tsivkovski | [@Daniel Tsivkovski](https://github.com/dtsivkovski)  |[Scrum Board](  ) | [Commits]( https://github.com/LindaLiu1202/just_cakes/commits )
 | Jason Ott | [@JasonO12]( https://github.com/JasonO12 )  |[Scrum Board](  ) | [Commits]( https://github.com/LindaLiu1202/just_cakes/commits?author=JasonO12  )
 
 ---
