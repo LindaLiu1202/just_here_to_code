@@ -1,5 +1,5 @@
-# Team Just-Here-For-Cake: Website
-### AP CSP P4: Team Just-Here-For-Cake
+# Team Just-Here-To-Code: Website
+### AP CSP P4: Team Just-Here-To-Code
 ---
 ## [Scrum Board](https://github.com/LindaLiu1202/just_cakes/projects/1)
 ## [Insights with Contributors and Commits]( https://github.com/LindaLiu1202/just_cakes/graphs/contributors )
