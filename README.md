@@ -1,7 +1,7 @@
 # Team Just-Here-To-Code: Website
 ### AP CSP P4: Team Just-Here-To-Code
 ---
-## [Scrum Board](https://github.com/LindaLiu1202/just_cakes/projects/1)
+## [Scrum Board](https://github.com/LindaLiu1202/just_here_to_code/projects/1)
 ## [Insights with Contributors and Commits]( https://github.com/LindaLiu1202/just_here_to_code/graphs/contributors )
 --- 
 ###   <h2 id="contributers">Contributors</h2>
@@ -19,7 +19,7 @@
 ---
 
 ###   <h2 id="Week0">Week 0 - Plans, Team, Jobs</h2>
-- <a href="  ">Scrum Board</a>
+- <a href=" https://github.com/LindaLiu1202/just_here_to_code/projects/1 ">Scrum Board</a>
 
 | Name | Requirement | Evidence | Grade |
 |:----:|:-----------:|:--------:|:-----:|
