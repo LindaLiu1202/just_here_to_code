@@ -21,6 +21,14 @@
 ###   <h2 id="Week0">Week 0 - Plans, Team, Jobs</h2>
 - <a href=" https://github.com/LindaLiu1202/just_here_to_code/projects/1 ">Scrum Board</a>
 
+| Team Member | Team Role |
+| ----------- | --------- |
+| Saathvika   | Technical Officer    |
+| Linda       | Designer     |
+| Isabella    | GitHub Admin     |
+| Daniel      | Scrum Master     |
+| Jason       | Deployment Manager    |
+
 | Name | Requirement | Evidence | Grade |
 |:----:|:-----------:|:--------:|:-----:|
 | Linda Liu |  |<a href="  ">Ticket</a><br>|/5|
