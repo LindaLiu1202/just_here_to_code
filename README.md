@@ -1,4 +1,4 @@
-# Team Just-Here-To-Code: Career Technical Education Website
+# Career Technical Education Website
 ### AP CSP P4: Team Just-Here-To-Code
 ---
 ## [Scrum Board](https://github.com/LindaLiu1202/just_here_to_code/projects/1)
@@ -19,7 +19,6 @@
 ---
 
 ###   <h2 id="Week0">Week 0 - Plans, Team, Jobs</h2>
-- <a href=" https://github.com/LindaLiu1202/just_here_to_code/projects/1 ">Scrum Board</a>
 
 | Team Member | Team Role |
 | ----------- | --------- |
@@ -29,6 +28,8 @@
 | Daniel      | Scrum Master     |
 | Jason       | Deployment Manager    |
 
+- Team Scoring:
+
 | Name | Requirement | Evidence | Grade |
 |:----:|:-----------:|:--------:|:-----:|
 | Linda Liu |  |<a href="  ">Ticket</a><br>|/5|
@@ -37,7 +38,7 @@
 | Daniel Tsivkovski  |  |<a href="  ">Ticket</a><br>|/5|
 | Jason Ott  |  |<a href="  ">Ticket</a><br>|/5|
 
-- Individual Scoring
+- Individual Scoring:
 
 | Name | Journal with TT & TPT Notes | Grade |
 |:----:|:---------------------------:|:-----:|
