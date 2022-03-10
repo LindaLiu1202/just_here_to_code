@@ -13,5 +13,4 @@ __pycache__/
 .vscode/
 *.pyc
 routes/__pycache__/
-routes/__pycache__/
 .venv/
