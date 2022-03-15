@@ -1,0 +1,148 @@
+{% extends "layouts/base.html" %}
+
+{% block body %}
+<style>
+    .content {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    body {
+        font-family: 'Dongle', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    html,
+    body {
+        margin: 0;
+        height: 100%;
+        background-color: #212529;
+        animation: fadein 2s;
+        -moz-animation: fadein 2s;
+        -webkit-animation: fadein 2s;
+        -o-animation: fadein 2s;
+        min-height: 100%;
+    }
+</style>
+
+<div class="h1 text-white text-center px-5 pt-5">
+    Upcoming Event Calendar Testing
+</div>
+<div class="d-flex align-content-center mx-5">
+    <table class="table m-5">
+        <thead class="bg-primary text-white">
+          <tr>
+            <th scope="col">Event Name</th>
+            <th scope="col">Date </th>
+            <th scope="col">Time</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white text-black" id="event-output">
+
+        </tbody>
+</div>
+
+<script>
+    // Finds current date and time to compare events to
+    const date = new Date()
+    let cur_month = date.getMonth() + 1
+    let cur_date = date.getDate()
+    let cur_year = date.getFullYear()
+    console.log(cur_month, cur_date, cur_year)
+
+    // Finds output table div and removes all previous events (preventing duplicates)
+    var outputdiv = document.getElementById("event-output");
+    console.log(outputdiv)
+        while (outputdiv.firstChild) {
+            outputdiv.removeChild(outputdiv.firstChild);
+        };
+    
+    // PLACEHOLDER EVENTS FOR TESTING
+    const event1 = {
+        "name": "Event #1",
+        "mmddyyyy": "02252020",
+        "time": "1500",
+        "description": "This event is a testing event for the calendar. It should look different."
+    }
+    const event2 = {
+        "name": "Event #2",
+        "mmddyyyy": "03252022",
+        "time": "1100",
+        "description": "This event is a testing event for the calendar"
+    }
+    const event3 = {
+        "name": "Event #3",
+        "mmddyyyy": "06122024",
+        "time": "1800",
+        "description": "The description for this event is different because it is cooler :)"
+    }
+    eventArray = [event1, event2, event3]
+
+    // Function passes through all events
+    for (var i = 0; i < eventArray.length; i++) {
+
+        event = eventArray[i]
+        j = event["mmddyyyy"]
+        // Finds date and time of each event and compares Y, M, D
+        var displayevent = true
+        var skip = false
+        // Compares year of event to current date
+        if (parseInt(j.substring(4,8)) < cur_year) {
+            displayevent = false
+        }
+        // If year is greater than current, it can skip comparing date and month
+        else {
+            skip = true
+        }
+        // Compares month and date in similar fashion to year
+        if (skip == false) {
+            if (parseInt(j.substring(0,2)) < cur_month) {
+                displayevent = false
+            }
+            else {
+                skip = true
+            }
+            if (skip == false) {
+                if (parseInt(j.substring(2,4)) < cur_date) {
+                    displayevent = false
+                }
+            }
+        }
+        
+        // Displays the event in table if it is after or on the current date, but not if it is before
+        if (displayevent == true) {
+            displayevent_func(event)
+        }
+    }
+
+    function displayevent_func(event) {
+        // Creates a new table row
+        var rowdiv = document.createElement("tr");
+        outputdiv.appendChild(rowdiv);
+            // Creates new columns for the row based on event info and appends it
+            // Event Name
+            var namediv = document.createElement("td")
+                namediv.innerHTML = event["name"]
+                rowdiv.appendChild(namediv)
+            // Event Date
+            var datediv = document.createElement("td")
+                datediv.innerHTML = event["mmddyyyy"]
+                rowdiv.appendChild(datediv)
+            // Event Time
+            var timediv = document.createElement("td")
+                timediv.innerHTML = event["time"]
+                rowdiv.appendChild(timediv)
+            // Event Description
+            var descdiv = document.createElement("td")
+                descdiv.innerHTML = event["description"]
+                rowdiv.appendChild(descdiv)
+    }
+    
+    
+    
+</script>
+
+
+
+{% endblock %}

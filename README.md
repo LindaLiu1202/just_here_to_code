@@ -32,11 +32,11 @@
 
 | Name | Requirement | Evidence | Grade |
 |:----:|:-----------:|:--------:|:-----:|
-| Linda Liu |  |<a href="  ">Ticket</a><br>|/5|
-| Saathvika Ajith |  |<a href="  ">Ticket</a><br>|/5|
-| Isabella Yan  |  |<a href="  ">Ticket</a><br>|/5|
-| Daniel Tsivkovski  |  |<a href="  ">Ticket</a><br>|/5|
-| Jason Ott  |  |<a href="  ">Ticket</a><br>|/5|
+| Linda Liu | Plans, Team, Jobs |<a href="  ">Ticket</a><br>|/5|
+| Saathvika Ajith | Plans, Team, Jobs |<a href="  ">Ticket</a><br>|/5|
+| Isabella Yan  | Plans, Team, Jobs |<a href="  ">Ticket</a><br>|/5|
+| Daniel Tsivkovski  | Plans, Team, Jobs |<a href="  ">Ticket</a><br>|/5|
+| Jason Ott  | Plans, Team, Jobs |<a href="  ">Ticket</a><br>|/5|
 
 - Individual Scoring:
 
