@@ -32,17 +32,17 @@
 
 | Name | Requirement | Evidence | Grade |
 |:----:|:-----------:|:--------:|:-----:|
-| Linda Liu | Plans, Team, Jobs |<a href="  ">Ticket</a><br>|/5|
-| Saathvika Ajith | Plans, Team, Jobs |<a href="  ">Ticket</a><br>|/5|
-| Isabella Yan  | Plans, Team, Jobs |<a href="  ">Ticket</a><br>|/5|
-| Daniel Tsivkovski  | Plans, Team, Jobs |<a href="  ">Ticket</a><br>|/5|
-| Jason Ott  | Plans, Team, Jobs |<a href="  ">Ticket</a><br>|/5|
+| Linda Liu | Plans, Team, Jobs |<a href=" https://github.com/LindaLiu1202/just_here_to_code/issues/1 ">Ticket</a><br>|/5|
+| Saathvika Ajith | Plans, Team, Jobs |<a href=" https://github.com/LindaLiu1202/just_here_to_code/issues/1 ">Ticket</a><br>|/5|
+| Isabella Yan  | Plans, Team, Jobs |<a href=" https://github.com/LindaLiu1202/just_here_to_code/issues/1 ">Ticket</a><br>|/5|
+| Daniel Tsivkovski  | Plans, Team, Jobs |<a href=" https://github.com/LindaLiu1202/just_here_to_code/issues/1 ">Ticket</a><br>|/5|
+| Jason Ott  | Plans, Team, Jobs |<a href=" https://github.com/LindaLiu1202/just_here_to_code/issues/1 ">Ticket</a><br>|/5|
 
 - Individual Scoring:
 
 | Name | Individual Repository | Grade |
 |:----:|:---------------------------:|:-----:|
-| Linda Liu | <a href=" https://github.com/LindaLiu1202/lindaliu ">Individual Repository</a> | /5 |
+| Linda Liu | <a href="https://github.com/LindaLiu1202/lindaliu">Individual Repository</a> | /5 |
 | Saathvika Ajith | <a href="  ">Individual Repository</a> | /5 |
 | Isabella Yan   | <a href="  ">Individual Repository</a> |  /5 |
 | Daniel Tsivkovski  | <a href="  ">Individual Repository</a> | /5 |
