@@ -32,11 +32,11 @@
 
 | Name | Requirement | Evidence | Grade |
 |:----:|:-----------:|:--------:|:-----:|
-| Linda Liu | Plans, Team, Jobs |<a href=" https://github.com/LindaLiu1202/just_here_to_code/issues/1 ">Ticket</a><br>|/2|
-| Saathvika Ajith | Plans, Team, Jobs |<a href=" https://github.com/LindaLiu1202/just_here_to_code/issues/1 ">Ticket</a><br>|/2|
-| Isabella Yan  | Plans, Team, Jobs |<a href=" https://github.com/LindaLiu1202/just_here_to_code/issues/1 ">Ticket</a><br>|/2|
-| Daniel Tsivkovski  | Plans, Team, Jobs |<a href=" https://github.com/LindaLiu1202/just_here_to_code/issues/1 ">Ticket</a><br>|/2|
-| Jason Ott  | Plans, Team, Jobs |<a href=" https://github.com/LindaLiu1202/just_here_to_code/issues/1 ">Ticket</a><br>|/2|
+| Linda Liu | Plans, Team, Jobs |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/1">Ticket</a><br>|/2|
+| Saathvika Ajith | Plans, Team, Jobs |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/1">Ticket</a><br>|/2|
+| Isabella Yan  | Plans, Team, Jobs |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/1">Ticket</a><br>|/2|
+| Daniel Tsivkovski  | Plans, Team, Jobs |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/1">Ticket</a><br>|/2|
+| Jason Ott  | Plans, Team, Jobs |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/1">Ticket</a><br>|/2|
 
 - Individual Scoring:
 
