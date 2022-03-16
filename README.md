@@ -40,10 +40,10 @@
 
 - Individual Scoring:
 
-| Name | Journal with TT & TPT Notes | Grade |
+| Name | Individual Repository | Grade |
 |:----:|:---------------------------:|:-----:|
-| Linda Liu | <a href="  ">Journal</a> | /5 |
-| Saathvika Ajith | <a href="  ">Journal</a> | /5 |
-| Isabella Yan   | <a href="  ">Journal</a> |  /5 |
-| Daniel Tsivkovski  | <a href="  ">Journal</a> | /5 |
-| Jason Ott   | <a href="  ">Journal</a> | /5 |
+| Linda Liu | <a href=" https://github.com/LindaLiu1202/lindaliu ">Individual Repository</a> | /5 |
+| Saathvika Ajith | <a href="  ">Individual Repository</a> | /5 |
+| Isabella Yan   | <a href="  ">Individual Repository</a> |  /5 |
+| Daniel Tsivkovski  | <a href="  ">Individual Repository</a> | /5 |
+| Jason Ott   | <a href="  ">Individual Repository</a> | /5 |
