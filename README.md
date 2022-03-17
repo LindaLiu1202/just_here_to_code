@@ -45,5 +45,5 @@
 | Linda Liu | <a href="https://github.com/LindaLiu1202/lindaliu">Individual Repository</a> | /3 |
 | Saathvika Ajith | <a href="  ">Individual Repository</a> | /3 |
 | Isabella Yan   | <a href="  ">Individual Repository</a> |  /3 |
-| Daniel Tsivkovski  | <a href="  ">Individual Repository</a> | /3 |
+| Daniel Tsivkovski  | <a href="https://dtsivkovski.github.io/dtsivkovski-cspt3/">Individual Repository</a> | /3 |
 | Jason Ott   | <a href="  ">Individual Repository</a> | /3 |
