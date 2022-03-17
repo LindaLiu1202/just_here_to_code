@@ -4,16 +4,38 @@
 ### _Our website will be a redesign of the official PUSD Career Technical Education webpage._
 
 - Our sponsor is Ms. Stevenson from the Poway Career Technical Education Branch. We will be not only redesigning the official webpage on our site, but we will also integrate more features and make the website more interactable with a goal of retaining user interest.
----
+
+
 # Team Roles:
-| Team Member | Team Role |
-| ----------- | --------- |
-| Saathvika   | Technical Officer|
-| Linda       | Designer  |
-| Isabella    | Github Admin|
-| Daniel      | Scrum Master|
-| Jason       | Deployment Manager|
----
+<table>
+  <tr>
+    <th>Team Member</th>
+    <th>Team Role</th>
+  </tr>
+  <tr>
+    <td>Saathvika</td>
+    <td>Technical Officer</td>
+  </tr>
+  <tr>
+    <td>Linda</td>
+    <td>Designer</td>
+  </tr>
+  <tr>
+    <td>Isabella</td>
+    <td>GitHub Admin</td>
+  </tr>
+  <tr>
+    <td>Daniel</td>
+    <td>Scrum Master</td>
+  </tr>
+  <tr>
+    <td>Jason</td>
+    <td>Deployment Manager</td>
+  </tr>
+    
+ 
+
+
 # Wireframes
 [link to figma](https://www.figma.com/file/vgBIIfPkC7ItKmDNuRM0BP/Untitled?node-id=5%3A1) <br>
 ![Homepage Light Mode](https://user-images.githubusercontent.com/89223976/158253738-e0d6e801-1210-4223-8f02-ab53641ec227.png)
