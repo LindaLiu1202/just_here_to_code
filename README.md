@@ -67,6 +67,6 @@
 |:----:|:---------------------------:|:-----:|
 | Linda Liu | <a href="https://github.com/LindaLiu1202/lindaliu">Individual Repository</a> | /3 |
 | Saathvika Ajith | <a href="https://github.com/Saathvika-Ajith/Saathvika-Ajith">Individual Repository</a> | /3 |
-| Isabella Yan   | <a href="  ">Individual Repository</a> |  /3 |
+| Isabella Yan   | <a href="https://github.com/yqw7/yqw7.github.io">Individual Repository</a> |  /3 |
 | Daniel Tsivkovski  | <a href="  ">Individual Repository</a> | /3 |
 | Jason Ott   | <a href="  ">Individual Repository</a> | /3 |
