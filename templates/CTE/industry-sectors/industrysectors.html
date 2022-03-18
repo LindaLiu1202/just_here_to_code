@@ -8,9 +8,52 @@
 </style>
 
 {% block body %}
-<div class="d-flex justify-content-left p-3">
-<div class="row m-2">
-<button type="button col-4" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#agricultureModal">
+<div class="d-flex container justify-content-left p-3">
+<div class="row">
+
+  <button type="button" class="btn btn-primary col-10" data-bs-toggle="modal" data-bs-target="#transportModal">
+    <div class="row"><img class="imagefit" src="/static/industry-sectors/is-icons-trans.png"></div>
+    <div class="row text-center p-2">Transportation</div>
+  </button>
+    <!-- Modal -->
+    <div class="modal fade" id="transportModal" tabindex="-1" aria-labelledby="transportModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="transportModalLabel">Transportation Industry Sector</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body row">
+  
+            <div class="col-auto p-3">
+              <img class="imagefit" src="/static/industry-sectors/is-icons-trans.png">
+            </div>
+            <div class="col-8">
+              <p>
+                This sector is designed to provide a foundation in transportation services for all 
+                industrial technology education students in California. There are eight focus areas 
+                that fall under the Transportation sector, each with different career opportunities. 
+                The focus areas are On-Road; Off-Road; Stationary; Rail; Water/Sea; Air; Space; 
+                and Small Engines and Specialty Equipment.        
+                <br><br>
+                The pathways in the Transportation sector emphasize real-world, occupationally 
+                relevant experiences of significant scope and depth in three areas: Operations, 
+                Structural Repair and Refinishing, and Systems Diagnostics, Service, and Repair.
+              </p>
+            </div>
+          </div>
+          <div class="modal-body row" id="transport-info" style="display: none">
+            <iframe style="width:100%; height:50vw" src="https://www.cde.ca.gov/ci/ct/sf/documents/transportation.pdf" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onclick="revealinfo('transport-info')">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<button type="button" class="btn btn-primary col-10" data-bs-toggle="modal" data-bs-target="#agricultureModal">
   <div class="row"><img class="imagefit" src="/static/industry-sectors/is-icons-agNatural.png"></div>
   <div class="row text-center p-2">Agriculture and Natural Resources</div>
 </button>
