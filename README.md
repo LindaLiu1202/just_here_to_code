@@ -1,6 +1,7 @@
 # Career Technical Education Website
 ### AP CSP P4: Team Just-Here-To-Code
 ---
+## [Github Pages](https://lindaliu1202.github.io/just_here_to_code/)
 ## [Scrum Board](https://github.com/LindaLiu1202/just_here_to_code/projects/1)
 ## [Insights with Contributors and Commits]( https://github.com/LindaLiu1202/just_here_to_code/graphs/contributors )
 --- 
@@ -15,8 +16,31 @@
 
 ---
 ## Table of Contents
-1. [Week 0 - Plans, Team, Jobs](#Week0)
+1. [Week 1 - Lists and Loops](#Week1)
+2. [Week 0 - Plans, Team, Jobs](#Week0)
 ---
+
+###   <h2 id="Week1">Week 1 - Lists and Loops</h2>
+
+- Team Scoring:
+
+| Name | Requirement | Evidence | Grade |
+|:----:|:-----------:|:--------:|:-----:|
+| Linda Liu | Plans, Team, Jobs |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/5">Ticket</a><br>|/2|
+| Saathvika Ajith | Plans, Team, Jobs |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/5">Ticket</a><br>|/2|
+| Isabella Yan  | Plans, Team, Jobs |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/5">Ticket</a><br>|/2|
+| Daniel Tsivkovski  | Plans, Team, Jobs |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/5">Ticket</a><br>|/2|
+| Jason Ott  | Plans, Team, Jobs |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/5">Ticket</a><br>|/2|
+
+- Individual Scoring:
+
+| Name | Individual Repository | Grade |
+|:----:|:---------------------------:|:-----:|
+| Linda Liu | <a href="https://github.com/LindaLiu1202/lindaliu">Individual Repository</a> | /3 |
+| Saathvika Ajith | <a href="https://github.com/Saathvika-Ajith/Saathvika-Ajith">Individual Repository</a> | /3 |
+| Isabella Yan   | <a href="https://github.com/yqw7/yqw7.github.io">Individual Repository</a> |  /3 |
+| Daniel Tsivkovski  | <a href="  ">Individual Repository</a> | /3 |
+| Jason Ott   | <a href="  ">Individual Repository</a> | /3 |
 
 ###   <h2 id="Week0">Week 0 - Plans, Team, Jobs</h2>
 
@@ -32,18 +56,18 @@
 
 | Name | Requirement | Evidence | Grade |
 |:----:|:-----------:|:--------:|:-----:|
-| Linda Liu | Plans, Team, Jobs |<a href="  ">Ticket</a><br>|/5|
-| Saathvika Ajith | Plans, Team, Jobs |<a href="  ">Ticket</a><br>|/5|
-| Isabella Yan  | Plans, Team, Jobs |<a href="  ">Ticket</a><br>|/5|
-| Daniel Tsivkovski  | Plans, Team, Jobs |<a href="  ">Ticket</a><br>|/5|
-| Jason Ott  | Plans, Team, Jobs |<a href="  ">Ticket</a><br>|/5|
+| Linda Liu | Plans, Team, Jobs |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/1">Ticket</a><br>|/2|
+| Saathvika Ajith | Plans, Team, Jobs |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/1">Ticket</a><br>|/2|
+| Isabella Yan  | Plans, Team, Jobs |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/1">Ticket</a><br>|/2|
+| Daniel Tsivkovski  | Plans, Team, Jobs |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/1">Ticket</a><br>|/2|
+| Jason Ott  | Plans, Team, Jobs |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/1">Ticket</a><br>|/2|
 
 - Individual Scoring:
 
-| Name | Journal with TT & TPT Notes | Grade |
+| Name | Individual Repository | Grade |
 |:----:|:---------------------------:|:-----:|
-| Linda Liu | <a href="  ">Journal</a> | /5 |
-| Saathvika Ajith | <a href="  ">Journal</a> | /5 |
-| Isabella Yan   | <a href="  ">Journal</a> |  /5 |
-| Daniel Tsivkovski  | <a href="  ">Journal</a> | /5 |
-| Jason Ott   | <a href="  ">Journal</a> | /5 |
+| Linda Liu | <a href="https://github.com/LindaLiu1202/lindaliu">Individual Repository</a> | /3 |
+| Saathvika Ajith | <a href="https://github.com/Saathvika-Ajith/Saathvika-Ajith">Individual Repository</a> | /3 |
+| Isabella Yan   | <a href="https://github.com/yqw7/yqw7.github.io">Individual Repository</a> |  /3 |
+| Daniel Tsivkovski  | <a href="  ">Individual Repository</a> | /3 |
+| Jason Ott   | <a href="  ">Individual Repository</a> | /3 |
