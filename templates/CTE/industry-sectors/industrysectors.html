@@ -8,11 +8,12 @@
 </style>
 
 {% block body %}
-<div class="d-flex justify-content-center p-3">
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#agricultureModal">
-    Agriculture and Natural Resources
+<div class="d-flex justify-content-left p-3">
+<div class="row m-2">
+<button type="button col-4" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#agricultureModal">
+  <div class="row"><img class="imagefit" src="/static/industry-sectors/is-icons-agNatural.png"></div>
+  <div class="row text-center p-2">Agriculture and Natural Resources</div>
 </button>
-  
   <!-- Modal -->
   <div class="modal fade" id="agricultureModal" tabindex="-1" aria-labelledby="agricultureModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
@@ -26,7 +27,7 @@
           <div class="col-auto p-3">
             <img class="imagefit" src="/static/industry-sectors/is-icons-agNatural.png">
           </div>
-          <div class="col-8">
+          <div class="col-10">
             <p>
             The Agriculture and Natural Resources sector is designed to provide a foundation in agriculture for all students.  The pathways emphasize real-world, occupationally relevant experiences. 
             <br><br>
@@ -35,33 +36,37 @@
           </div>
         </div>
         <div class="modal-body row" id="ag-info" style="display: none">
-          <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSECKpt5gvGTcDftpJDQIYGhUxM6d2IF_JLkjPi-KLpQWN5cHEpv9kuqbMTP7Vuu_Xuc8XuRxjPIkkM/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+          <iframe style="width:100%; height:50vw" src="https://docs.google.com/presentation/d/e/2PACX-1vSECKpt5gvGTcDftpJDQIYGhUxM6d2IF_JLkjPi-KLpQWN5cHEpv9kuqbMTP7Vuu_Xuc8XuRxjPIkkM/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
           <div class="mt-5 justify-content-center">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/W_BXapUlpvQ" title="YouTube video player - CTE Agriculture Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe style="width:100%; height:50vw" src="https://www.youtube.com/embed/W_BXapUlpvQ" title="YouTube video player - CTE Agriculture Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary" onclick="revealinfo('ag-info')">Learn More</button>
         </div>
-
-        <script>
-
-          function revealinfo(n){
-            id = n
-            div = document.getElementById(id)
-            if (div.style.display == "none") {
-              div.style.display = "block"
-            }
-            else {
-              div.style.display = "none"
-            }
-          }
-
-        </script>
       </div>
     </div>
   </div>
-  </div>
 
+  
+
+</div>
+</div>
+  
+
+
+<script>
+
+  function revealinfo(id){
+    div = document.getElementById(id)
+    if (div.style.display == "none") {
+      div.style.display = "block"
+    }
+    else {
+      div.style.display = "none"
+    }
+  }
+
+</script>
 {% endblock %}
