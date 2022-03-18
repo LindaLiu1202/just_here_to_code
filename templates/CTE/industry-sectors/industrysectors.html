@@ -1,0 +1,67 @@
+{% extends 'layouts/base.html' %}
+
+<style>
+    imagefit {
+        max-width: 100%;
+        max-height: 100%;
+    }
+</style>
+
+{% block body %}
+<div class="d-flex justify-content-center p-3">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#agricultureModal">
+    Agriculture and Natural Resources
+</button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="agricultureModal" tabindex="-1" aria-labelledby="agricultureModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="agricultureModalLabel">Agriculture & Natural Resources (Agnatural) Industry Sector</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body row">
+
+          <div class="col-auto p-3">
+            <img class="imagefit" src="/static/industry-sectors/is-icons-agNatural.png">
+          </div>
+          <div class="col-8">
+            <p>
+            The Agriculture and Natural Resources sector is designed to provide a foundation in agriculture for all students.  The pathways emphasize real-world, occupationally relevant experiences. 
+            <br><br>
+            Click on the button below to learn more about courses in Agriculture offered at Poway High School.
+            </p>
+          </div>
+        </div>
+        <div class="modal-body row" id="ag-info" style="display: none">
+          <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSECKpt5gvGTcDftpJDQIYGhUxM6d2IF_JLkjPi-KLpQWN5cHEpv9kuqbMTP7Vuu_Xuc8XuRxjPIkkM/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+          <div class="mt-5 justify-content-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/W_BXapUlpvQ" title="YouTube video player - CTE Agriculture Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="revealinfo('ag-info')">Learn More</button>
+        </div>
+
+        <script>
+
+          function revealinfo(n){
+            id = n
+            div = document.getElementById(id)
+            if (div.style.display == "none") {
+              div.style.display = "block"
+            }
+            else {
+              div.style.display = "none"
+            }
+          }
+
+        </script>
+      </div>
+    </div>
+  </div>
+  </div>
+
+{% endblock %}
