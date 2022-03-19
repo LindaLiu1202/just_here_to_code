@@ -4,14 +4,16 @@
 ---
 ## [Scrum Board](https://github.com/LindaLiu1202/just_here_to_code/projects/1)
 ## [Insights with Contributors and Commits]( https://github.com/LindaLiu1202/just_here_to_code/graphs/contributors )
----
+
 ---
 ## Table of Contents
+
 1. [Week 1 - Lists and Loops](#Week1)
 2. [Week 0 - Plans, Team, Jobs](#Week0)
+
 ---
 
-<h2 id="Week1">Week 1 - Lists and Loops</h2>
+## Week 1 - Lists and Loops
 
 - Team Scoring:
 
@@ -33,7 +35,7 @@
 | Daniel Tsivkovski  | <a href="  ">Individual Repository</a> | /3 |
 | Jason Ott   | <a href="  ">Individual Repository</a> | /3 |
 
-<h2 id="Week0">Week 0 - Plans, Team, Jobs</h2>
+## Week 0 - Plans, Team, Jobs
 
 
 - Team Scoring:
