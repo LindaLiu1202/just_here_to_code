@@ -11,7 +11,7 @@
 2. [Week 0 - Plans, Team, Jobs](#Week0)
 ---
 
-###   <h2 id="Week1">Week 1 - Lists and Loops</h2>
+<h2 id="Week1">Week 1 - Lists and Loops</h2>
 
 - Team Scoring:
 
@@ -33,7 +33,7 @@
 | Daniel Tsivkovski  | <a href="  ">Individual Repository</a> | /3 |
 | Jason Ott   | <a href="  ">Individual Repository</a> | /3 |
 
-###   <h2 id="Week0">Week 0 - Plans, Team, Jobs</h2>
+<h2 id="Week0">Week 0 - Plans, Team, Jobs</h2>
 
 
 - Team Scoring:
