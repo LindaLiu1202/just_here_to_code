@@ -2,7 +2,7 @@
 This page is meant to show any plans for technical(database or other) items or visual ideation(wireframes).
 
 ## Technical Ideation
-{% includes uml-diagram.html %}
+{% include uml-diagram.html %}
 
 ## Visual Ideation
 [Link to Figma Page](https://www.figma.com/file/vgBIIfPkC7ItKmDNuRM0BP/Untitled?node-id=5%3A1) <br>
