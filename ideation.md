@@ -1,3 +1,5 @@
+{% include navigation.html %}
+
 # Ideation Page
 This page is meant to show any plans for technical(database or other) items or visual ideation(wireframes).
 
