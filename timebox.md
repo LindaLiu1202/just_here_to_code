@@ -8,8 +8,8 @@
 ---
 ## Table of Contents
 
-1. [Week 1 - Lists and Loops](#Week1)
-2. [Week 0 - Plans, Team, Jobs](#Week0)
+1. [Week 1 - Lists and Loops](https://lindaliu1202.github.io/just_here_to_code/timebox#week-1---lists-and-loops)
+2. [Week 0 - Plans, Team, Jobs](https://lindaliu1202.github.io/just_here_to_code/timebox#week-0---plans-team-jobs)
 
 ---
 
