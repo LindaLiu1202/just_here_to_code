@@ -7,6 +7,11 @@
     <th> Tangibles </th>
   </tr>
   <tr>
+    <td> Week 2 </td>
+    <td> Continue work on home page, industry sectors page, and start work on the internships/WBL page. </td>
+    <td><a href="https://github.com/LindaLiu1202/just_here_to_code/issues/8"> Week 2 Review Ticket </a></td>
+  </tr>
+  <tr>
     <td> Week 1 </td>
     <td> Start main CTE home page and Industry sectors page. </td>
     <td><a href="https://github.com/LindaLiu1202/just_here_to_code/issues/5"> Week 1 Review Ticket </a></td>
