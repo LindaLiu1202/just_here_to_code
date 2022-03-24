@@ -16,8 +16,9 @@
 
 ---
 ## Table of Contents
-1. [Week 1 - Lists and Loops](#Week1)
-2. [Week 0 - Plans, Team, Jobs](#Week0)
+1. [Week 2 = Classy Functions](#Week2)
+2. [Week 1 - Lists and Loops](#Week1)
+3. [Week 0 - Plans, Team, Jobs](#Week0)
 ---
 
 ###   <h2 id="Week1">Week 1 - Lists and Loops</h2>
