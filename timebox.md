@@ -18,10 +18,10 @@
 
 | Name | Requirement | Evidence |
 |:----:|:-----------:|:--------:|
-| Linda Liu | Classy Functions |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/6">Ticket</a><br>|
-| Jason Ott | Classy Functions |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/6">Ticket</a><br>|
-| Daniel Tsivkovski | Classy Functions |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/6">Ticket</a><br>|
-| Saathvika Ajith | Classy Functions |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/6">Ticket</a><br>|
+| Linda Liu | Classy Functions |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/8">Ticket</a><br>|
+| Jason Ott | Classy Functions |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/8">Ticket</a><br>|
+| Daniel Tsivkovski | Classy Functions |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/8">Ticket</a><br>|
+| Saathvika Ajith | Classy Functions |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/8">Ticket</a><br>|
 
 ## Week 1 - Lists and Loops
 
