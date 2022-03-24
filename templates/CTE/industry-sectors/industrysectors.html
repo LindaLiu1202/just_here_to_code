@@ -8,10 +8,54 @@
 </style>
 
 {% block body %}
-<div class="d-flex container justify-content-left p-3">
-<div class="row">
+<div class="row justify-content-center mt-5" style="width: 99%">
 
-  <button type="button" class="btn btn-primary col-10" data-bs-toggle="modal" data-bs-target="#transportModal">
+  <button type="button" class="btn btn-primary col-3 m-2" data-bs-toggle="modal" data-bs-target="#psModal">
+    <div class="row"><img class="imagefit" src="/static/industry-sectors/is-icons-ps.png"></div>
+    <div class="row text-center p-2">Transportation</div>
+  </button>
+    <!-- Modal -->
+    <div class="modal fade" id="psModal" tabindex="-1" aria-labelledby="psModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="psModalLabel">Transportation Industry Sector</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body row">
+  
+            <div class="col-auto p-3">
+              <img class="imagefit" src="/static/industry-sectors/is-icons-ps.png">
+            </div>
+            <div class="col-8">
+              <p>
+                Interested in becoming a fire fighter, EMT, paramedic, nurse, doctor or first responder?  Wnat to participate in hands-on classes tha tprovide you with life saving skills?
+                <br><br>
+                Check out the Fire Science and First Responder courses offered at Mt. Carmel High School!
+                <br><br>
+                These courses are open to all 9-12 grade students in PUSD.
+              </p>
+            </div>
+          </div>
+          <div class="modal-body row" id="ps-info" style="display: none">
+            <h3>Public Services Industry Sector Pathways </h3>
+            <p>
+              Public Safety<br>
+              Emergency Response<br>
+              Legal Practices<br>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onclick="revealinfo('ps-info')">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <button type="button" class="btn btn-primary col-3 m-2" data-bs-toggle="modal" data-bs-target="#transportModal">
     <div class="row"><img class="imagefit" src="/static/industry-sectors/is-icons-trans.png"></div>
     <div class="row text-center p-2">Transportation</div>
   </button>
@@ -53,7 +97,7 @@
       </div>
     </div>
 
-<button type="button" class="btn btn-primary col-10" data-bs-toggle="modal" data-bs-target="#agricultureModal">
+<button type="button" class="btn btn-primary col-3 m-2" data-bs-toggle="modal" data-bs-target="#agricultureModal">
   <div class="row"><img class="imagefit" src="/static/industry-sectors/is-icons-agNatural.png"></div>
   <div class="row text-center p-2">Agriculture and Natural Resources</div>
 </button>
@@ -92,7 +136,7 @@
     </div>
     </div>
 
-<button type="button" class="btn btn-primary col-10" data-bs-toggle="modal" data-bs-target="#ameModal">
+<button type="button" class="btn btn-primary col-3 m-2" data-bs-toggle="modal" data-bs-target="#ameModal">
     <div class="row"><img class="imagefit" src="/static/industry-sectors/is-icons-ame.png"></div>
     <div class="row text-center p-2">Arts, Media, & Entertainment</div>
 </button>
@@ -144,7 +188,6 @@
 
   
 
-</div>
 </div>
   
 
