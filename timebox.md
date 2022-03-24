@@ -8,10 +8,20 @@
 ---
 ## Table of Contents
 
-1. [Week 1 - Lists and Loops](https://lindaliu1202.github.io/just_here_to_code/timebox#week-1---lists-and-loops)
-2. [Week 0 - Plans, Team, Jobs](https://lindaliu1202.github.io/just_here_to_code/timebox#week-0---plans-team-jobs)
+- [Week 2 - Classy Functions](https://lindaliu1202.github.io/just_here_to_code/timebox#week-2---classy-functions)
+- [Week 1 - Lists and Loops](https://lindaliu1202.github.io/just_here_to_code/timebox#week-1---lists-and-loops)
+- [Week 0 - Plans, Team, Jobs](https://lindaliu1202.github.io/just_here_to_code/timebox#week-0---plans-team-jobs)
 
 ---
+
+## Week 2 - Classy Functions
+
+| Name | Requirement | Evidence |
+|:----:|:-----------:|:--------:|
+| Linda Liu | Classy Functions |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/6">Ticket</a><br>|
+| Jason Ott | Classy Functions |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/6">Ticket</a><br>|
+| Daniel Tsivkovski | Classy Functions |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/6">Ticket</a><br>|
+| Saathvika Ajith | Classy Functions |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/6">Ticket</a><br>|
 
 ## Week 1 - Lists and Loops
 
