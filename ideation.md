@@ -15,3 +15,7 @@ Homepage 1st version: light and dark mode <br>
 
 Homepage: 2nd version: <br>
 ![Homepage: 2nd version](https://user-images.githubusercontent.com/89223976/160194764-87dfb346-26fa-492d-a59a-1f1da3d6eea1.png)
+
+
+About Us Page:<br>
+![About Us](https://user-images.githubusercontent.com/89223976/160198320-d42ef183-2d65-4a26-b526-2f2dc976f7a3.png)
