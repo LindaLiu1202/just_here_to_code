@@ -13,7 +13,7 @@
 
 ### License - [[Link to License]](https://github.com/LindaLiu1202/just_here_to_code/blob/main/LICENSE)
 
-- WE are using an MIT license, because there is snot much reason for anyone to distribute the Poway CTE website. All we have to do is disclose the license and copyright information. 
+- We are using an MIT license, because there is snot much reason for anyone to distribute the Poway CTE website. All we have to do is disclose the license and copyright information. 
 
 
 
