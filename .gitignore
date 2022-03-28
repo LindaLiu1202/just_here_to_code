@@ -14,3 +14,4 @@ __pycache__/
 *.pyc
 routes/__pycache__/
 .venv/
+venv/

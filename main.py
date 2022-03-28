@@ -1,4 +1,5 @@
 # import "packages" from flask
+from __init__ import app
 from flask import Flask, render_template
 
 # create a Flask instance

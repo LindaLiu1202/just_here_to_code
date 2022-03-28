@@ -1,1 +1,11 @@
 Flask
+gunicorn==20.1.0
+requests==2.20.0
+Flask
+Flask-HTTPAuth
+Flask-RESTful
+Jinja2
+flask_migrate
+MarkupSafe
+flask_sqlalchemy
+Werkzeug
