@@ -6,9 +6,32 @@
 ---
 ---
 ## Table of Contents
-1. [Week 1 - Lists and Loops](#Week1)
-2. [Week 0 - Plans, Team, Jobs](#Week0)
+1. [Week 2 - Classy Functions](#Week2)
+2. [Week 1 - Lists and Loops](#Week1)
+3. [Week 0 - Plans, Team, Jobs](#Week0)
 ---
+
+###   <h2 id="Week2">Week 2 - Classy Functions</h2>
+
+- Team Scoring:
+
+| Name | Requirement | Evidence | Grade |
+|:----:|:-----------:|:--------:|:-----:|
+| Linda Liu | Classy Functions |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/8">Ticket</a><br>|/2|
+| Saathvika Ajith | Classy Functions |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/8">Ticket</a><br>|/2|
+| Isabella Yan  | Classy Functions |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/8">Ticket</a><br>|/2|
+| Daniel Tsivkovski  | Classy Functions |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/8">Ticket</a><br>|/2|
+| Jason Ott  | Classy Functions |<a href="https://github.com/LindaLiu1202/just_here_to_code/issues/8">Ticket</a><br>|/2|
+
+- Individual Scoring:
+
+| Name | Individual Repository | Grade |
+|:----:|:---------------------------:|:-----:|
+| Linda Liu | <a href="https://github.com/LindaLiu1202/lindaliu">Individual Repository</a> | /3 |
+| Saathvika Ajith | <a href="https://github.com/Saathvika-Ajith/Saathvika-Ajith">Individual Repository</a> | /3 |
+| Isabella Yan   | <a href="  ">Individual Repository</a> |  /3 |
+| Daniel Tsivkovski  | <a href="  ">Individual Repository</a> | /3 |
+| Jason Ott   | <a href="  ">Individual Repository</a> | /3 |
 
 ###   <h2 id="Week1">Week 1 - Lists and Loops</h2>
 
