@@ -22,7 +22,7 @@ class Events(db.Model):
     datetime = db.Column(db.String(19))
     description = db.Column(db.Text)
 
-    # constructor of a User object, initializes of instance variables within object
+    # constructor of a Event object, initializes of instance variables within object
     def __init__(self, name, datetime, description):
         self.name = name
         self.datetime = datetime
@@ -32,8 +32,8 @@ class Events(db.Model):
     # returns self or None on error
     def create(self):
         try:
-            # creates a person object from Users(db.Model) class, passes initializers
-            db.session.add(self)  # add prepares to persist person object to Users table
+            # creates a person object from Events(db.Model) class, passes initializers
+            db.session.add(self)  # add prepares to persist person object to Events table
             db.session.commit()  # SqlAlchemy "unit of work pattern" requires a manual commit
             return self
         except IntegrityError:
@@ -50,7 +50,7 @@ class Events(db.Model):
             "description": self.description
         }
 
-    # CRUD update: updates users name, description, usertag
+    # CRUD update: updates events name, description, etc
     # returns self
     def update(self, name, datetime="", description=""):
         """only updates values with length"""
