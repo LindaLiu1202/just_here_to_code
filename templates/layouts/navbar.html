@@ -1,3 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Navbar</title>
+
+</head>
+</html>
+
+<body>
+
+<header>
+    <div class="container">
+
+        <img src="static/logo.png" alt="logo" class="logo">
+
+        <nav>
+            <ul>
+                <li><a href={{ url_for('index') }}>Home</a></li>
+                <li><a href={{ url_for('industry') }}>Industry Sectors</a></li>
+                <li><a href={{ url_for('misc.calendar') }}>Calendar</a></li>
+                <li><a class="nav-link" href="/events/">Admin</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+</body>
+
+
+
+
+
+
+{#
 <!-- Navigation Bar from bootstrap
 This HTML is setup as a fragment allowing it to be "included" by other HTML files via Jinja2
 -->
@@ -15,4 +49,4 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
             <a class="nav-link" href="/events/">Admin</a>
         </div>
     </div>
-</nav>
+</nav>#}

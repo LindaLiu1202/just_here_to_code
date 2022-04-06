@@ -7,10 +7,10 @@ from model import Events
 
 # blueprint defaults https://flask.palletsprojects.com/en/2.0.x/api/#blueprint-objects
 app_events = Blueprint('events', __name__,
-                     url_prefix='/events',
-                     template_folder='events/',
-                     static_folder='static',
-                     static_url_path='assets')
+                       url_prefix='/events',
+                       template_folder='events/',
+                       static_folder='static',
+                       static_url_path='assets')
 
 # API generator https://flask-restful.readthedocs.io/en/latest/api.html#id1
 # api = Api(app_events)
@@ -33,7 +33,7 @@ def events_all():
 
 def events_ilike(term):
     """filter Users table by term into JSON list """
-    term = "%{}%".format(term)  
+    term = "%{}%".format(term)
     table = Events.query.filter((Events.name.ilike(term)) | (Events.url.ilike(term)))
     return [item.read() for item in table]
 
@@ -60,7 +60,7 @@ def mainframe():
     if request.form:
         key = request.form.get("key")
         if key == "adminentrance":  # input field has content
-            return render_template("event_edit.html", table=events_all())        
+            return render_template("event_edit.html", table=events_all())
     return render_template("entry.html", methods=["POST"])
 
 
@@ -101,7 +101,7 @@ def update():
         po = event_by_id(eventid)
         if po is not None:
             po.update(name)
-    return render_template("event_edit.html", table=events_all()) 
+    return render_template("event_edit.html", table=events_all())
 
 
 # CRUD delete
@@ -113,7 +113,7 @@ def delete():
         po = event_by_id(eventid)
         if po is not None:
             po.delete()
-    return render_template("event_edit.html", table=events_all()) 
+    return render_template("event_edit.html", table=events_all())
 
 
 # # Search Form
@@ -135,7 +135,6 @@ def delete():
 
 
 """ API routes section """
-
 
 # class UsersAPI:
 #     # class for create/post
