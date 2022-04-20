@@ -12,6 +12,12 @@
 
 <!-- CONTENT (in <body>), content for this page -->
 {% block body %}
+    <div class="container py-4">
+        <header class="pb-3 mb-4 border-bottom border-primary text-dark">
+            <span class="fs-4" style="color: white;">SQL CRUD Admin Page</span>
+        </header>
+        <button><a href = {{ url_for ('crud.crud_login' )}}> Logout </a></button>
+    </div>
     <div class="container py-4 text-light bg-success">
 
         <div class="container bg-secondary py-4">
@@ -84,10 +90,10 @@
                             <td><input type="email" name="email" id="email" placeholder="abc@xyz.org" required></td>
                             <td><input type="password" name="password" id="password" required></td>
                             <td><input type="tel" name="phone" id="phone" pattern="[0-9]{10}" placeholder="1234567890" required></td>
-                            <td><input type="submit" value="Create"></td>
                         </tr>
                         </tbody>
                     </table>
+                    <center><input type="submit" value="Create"></center>
                     <p id="pswError"></p>
                 </form>
             </div>
