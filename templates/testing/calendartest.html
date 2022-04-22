@@ -26,7 +26,7 @@
 </style>
 
 <div class="h1 text-white text-center px-5 pt-5">
-    Upcoming Event Calendar Testing
+    Upcoming CTE Events Calendar
 </div>
 <div class="d-flex align-content-center mx-5">
     <table class="table m-5">
@@ -53,42 +53,42 @@
 
     // Finds output table div and removes all previous events (preventing duplicates)
     var outputdiv = document.getElementById("event-output");
-    console.log(outputdiv)
         while (outputdiv.firstChild) {
             outputdiv.removeChild(outputdiv.firstChild);
         };
     
-    // PLACEHOLDER EVENTS FOR TESTING
-    const event1 = {
-        "name": "Event #1",
-        "mmddyyyy": "02252020",
-        "time": "1500",
-        "description": "This event is a testing event for the calendar. It should look different."
-    }
-    const event2 = {
-        "name": "Event #2",
-        "mmddyyyy": "03252022",
-        "time": "1100",
-        "description": "This event is a testing event for the calendar"
-    }
-    const event3 = {
-        "name": "Event #3",
-        "mmddyyyy": "06122024",
-        "time": "1800",
-        "description": "The description for this event is different because it is cooler :)"
-    }
-    eventArray = [event1, event2, event3]
+    var SearchGlobal = {};
+
+    function search(){
+    
+    const body = {
+        term: ""
+    };
+    SearchGlobal.body = body
+
+    fetch('/events/search/term/', {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify(body),
+        cache: "no-cache",
+        headers: new Headers({
+            "content-type": "application/json"
+        })
+    }).then(function(response) {
+        
+    response.json().then(function(data) {
 
     // Function passes through all events
-    for (var i = 0; i < eventArray.length; i++) {
+    for (var i = 0; i < data.length; i++) {
 
-        event = eventArray[i]
-        j = event["mmddyyyy"]
+        console.log(data[i])
+        event = data[i]
+        j = event.datetime
         // Finds date and time of each event and compares Y, M, D
         var displayevent = true
         var skip = false
         // Compares year of event to current date
-        if (parseInt(j.substring(4,8)) < cur_year) {
+        if (parseInt(j.substring(0,4)) < cur_year) {
             displayevent = false
         }
         // If year is greater than current, it can skip comparing date and month
@@ -97,14 +97,14 @@
         }
         // Compares month and date in similar fashion to year
         if (skip == false) {
-            if (parseInt(j.substring(0,2)) < cur_month) {
+            if (parseInt(j.substring(5,7)) < cur_month) {
                 displayevent = false
             }
             else {
                 skip = true
             }
             if (skip == false) {
-                if (parseInt(j.substring(2,4)) < cur_date) {
+                if (parseInt(j.substring(8,10)) < cur_date) {
                     displayevent = false
                 }
             }
@@ -115,6 +115,7 @@
             displayevent_func(event)
         }
     }
+    })})}
 
     function displayevent_func(event) {
         // Creates a new table row
@@ -123,23 +124,35 @@
             // Creates new columns for the row based on event info and appends it
             // Event Name
             var namediv = document.createElement("td")
-                namediv.innerHTML = event["name"]
+                namediv.innerHTML = event.name
                 rowdiv.appendChild(namediv)
             // Event Date
             var datediv = document.createElement("td")
-                datediv.innerHTML = event["mmddyyyy"]
+                // datediv.innerHTML = event.datetime.substring(0,10)
+                n = event.datetime
+                datediv.innerHTML = n.substring(5,7) + "/" + n.substring(8,10) + "/" + n.substring(0,4)
                 rowdiv.appendChild(datediv)
             // Event Time
             var timediv = document.createElement("td")
-                timediv.innerHTML = event["time"]
-                rowdiv.appendChild(timediv)
+                if (parseInt(event.datetime.substring(11,13)) > 12) {
+                    hour = (parseInt(event.datetime.substring(11,13)) - 12).toString();
+                    daysec = "P.M.";
+                }
+                else {
+                    hour = event.datetime.substring(11,13);
+                    daysec = "A.M.";
+                }
+                minutes = event.datetime.substring(14,16);
+                // timediv.innerHTML = event.datetime.substring(11,19)
+                timediv.innerHTML = hour + ":" + minutes + " " + daysec;
+                rowdiv.appendChild(timediv);
             // Event Description
             var descdiv = document.createElement("td")
-                descdiv.innerHTML = event["description"]
+                descdiv.innerHTML = event.description
                 rowdiv.appendChild(descdiv)
     }
     
-    
+    search();
     
 </script>
 
