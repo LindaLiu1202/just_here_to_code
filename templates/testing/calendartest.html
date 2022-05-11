@@ -2,17 +2,21 @@
 
 {% block body %}
 <style>
-    .content {
-        max-width: 500px;
+
+    table, th, td {
+        border: 1px solid black;
+        padding: 10px;
+        border-collapse: collapse;
         margin: auto;
+        background-color: white;
     }
 
-    body {
-        font-family: 'Dongle', sans-serif;
-        font-family: 'Montserrat', sans-serif;
+    h1 {
+        text-align: center;
+        margin-top: 5%;
+        padding-bottom: 15px;
     }
 
-    html,
     body {
         margin: 0;
         height: 100%;
@@ -25,11 +29,13 @@
     }
 </style>
 
-<div class="h1 text-white text-center px-5 pt-5">
-    Upcoming CTE Events Calendar
-</div>
+
+<h1>
+    Upcoming Event Calendar Testing
+</h1>
+
 <div class="d-flex align-content-center mx-5">
-    <table class="table m-5">
+    <table class="table">
         <thead class="bg-primary text-white">
           <tr>
             <th scope="col">Event Name</th>
@@ -96,22 +102,26 @@
             skip = true
         }
         // Compares month and date in similar fashion to year
-        if (skip == false) {
-            if (parseInt(j.substring(5,7)) < cur_month) {
+
+        if (skip === false) {
+            if (parseInt(j.substring(0,2)) < cur_month) {
+
                 displayevent = false
             }
             else {
                 skip = true
             }
+
             if (skip == false) {
                 if (parseInt(j.substring(8,10)) < cur_date) {
+
                     displayevent = false
                 }
             }
         }
         
         // Displays the event in table if it is after or on the current date, but not if it is before
-        if (displayevent == true) {
+        if (displayevent === true) {
             displayevent_func(event)
         }
     }

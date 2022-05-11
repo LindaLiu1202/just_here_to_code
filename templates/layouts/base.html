@@ -11,26 +11,82 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-<style>
-body {
-    background-color: #2E9CCA;
-}
 
-h1 {
-    font-family:monospace;
-    font-size: 50px;
-}
+    <style>
+        body {
+            margin: 0;
+            background: #222;
+            font-family: monospace;
+            font-weight: 400;
+        }
 
-h2 {
-    font-family: monospace;
-    font-size: 20px;
-}
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background: darkslategrey;
+        }
+
+        header::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .logo {
+            float: left;
+        }
+
+        nav {
+            float: right;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-left: 70px;
+            padding-top: 25px;
+            position: relative;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        nav a::before {
+            content: '';
+            display: block;
+            height: 5px;
+            width: 0;
+            background-color: darkseagreen;
+            position: absolute;
+            top: 0;
+            transition: all ease-in-out 250ms;
+        }
+
+        nav a:hover {
+            color: darkseagreen;
+        }
+
+        nav a:hover::before {
+            width: 100%;
+        }
+    </style>
 
 
-
-</style>
 
     <title>PUSD Career Technical Education</title>
+
 </head>
 
 <body>
