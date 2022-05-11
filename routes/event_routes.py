@@ -122,16 +122,16 @@ def delete():
 #     return render_template("full_search.html")
 
 
-# Search request and response
-# @app_events.route('/search/term/', methods=["POST"])
-# def search_term():
-#     """ obtain term/search request """
-#     req = request.get_json()
-#     term = req['term']
-#     output = users_ilike(term)
-#     output.sort(key=lambda x: x["name"])
-#     response = make_response(jsonify(output), 200)
-#     return response
+#Search request and response
+@app_events.route('/search/term/', methods=["POST"])
+def search_term():
+    """ obtain term/search request """
+    req = request.get_json()
+    term = req['term']
+    output = events_ilike(term)
+    # output.sort(key=lambda x: x["name"])
+    response = make_response(jsonify(output), 200)
+    return response
 
 
 """ API routes section """
