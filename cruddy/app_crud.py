@@ -40,11 +40,12 @@ def crud_login():
     if request.form:
         email = request.form.get("email")
         password = request.form.get("password")
-        if login(email, password):       # zero index [0] used as email is a tuple
+        if login(email, password):  # zero index [0] used as email is a tuple
             return redirect(url_for('crud.crud'))
 
     # if not logged in, show the login page
     return render_template("login.html")
+
 
 @app_crud.route('/login2/', methods=["GET", "POST"])
 def crud_login2():
@@ -52,17 +53,19 @@ def crud_login2():
     if request.form:
         email = request.form.get("email")
         password = request.form.get("password")
-        if login(email, password):       # zero index [0] used as email is a tuple
-            return render_template("testing/calendartest.html")
+        if login(email, password):  # zero index [0] used as email is a tuple
+            return render_template("calendar.html")
 
     # if not logged in, show the login page
     return render_template("login2.html")
+
 
 @app_crud.route("/logout/")
 @login_required
 def logout():
     logout_user()
     return render_template("login.html")
+
 
 @app_crud.route('/authorize/', methods=["GET", "POST"])
 def crud_authorize():
@@ -72,12 +75,13 @@ def crud_authorize():
         user_name = request.form.get("user_name")
         email = request.form.get("email")
         password1 = request.form.get("password1")
-        password2 = request.form.get("password1") # password should be verified
+        password2 = request.form.get("password1")  # password should be verified
         phone = request.form.get("phone")
-        if authorize(user_name, email, password1, phone):    # zero index [0] used as user_name and email are type tuple
+        if authorize(user_name, email, password1, phone):  # zero index [0] used as user_name and email are type tuple
             return redirect(url_for('crud.crud_login'))
     # show the auth user page if the above fails for some reason
     return render_template("authorize.html")
+
 
 @app_crud.route('/authorize2/', methods=["GET", "POST"])
 def crud_authorize2():
@@ -87,12 +91,13 @@ def crud_authorize2():
         user_name = request.form.get("user_name")
         email = request.form.get("email")
         password1 = request.form.get("password1")
-        password2 = request.form.get("password1") # password should be verified
+        password2 = request.form.get("password1")  # password should be verified
         phone = request.form.get("phone")
-        if authorize(user_name, email, password1, phone):    # zero index [0] used as user_name and email are type tuple
+        if authorize(user_name, email, password1, phone):  # zero index [0] used as user_name and email are type tuple
             return redirect(url_for('crud.crud_login2'))
     # show the auth user page if the above fails for some reason
     return render_template("authorize2.html")
+
 
 # CRUD create/add
 @app_crud.route('/create/', methods=["POST"])

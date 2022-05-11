@@ -12,42 +12,19 @@
 <header>
     <div class="container">
 
-        <img src="static/logo.png" height="65" alt="logo" class="logo">
+        <img src="{{ url_for('static', filename='logo.png') }}" height="65" alt="logo" class="logo">
 
         <nav>
             <ul>
                 <li><a href={{ url_for('index') }}>Home</a></li>
                 <li><a href={{ url_for('industry') }}>Industry Sectors</a></li>
-                <li><a class="nav-link" href="{{ url_for('crud.crud_login2') }}">Calendar</a></li>
-                <li><a class="nav-link" href="{{ url_for('crud.crud_login') }}">Log in</a></li>
-                <li><a class="nav-link" href="/events/">Admin</a></li>
+                <li><a href={{ url_for('crud.crud_login2') }}>User Calendar</a></li>
+                <li><a href="{{ url_for('misc.calendar') }}">Event Calendar</a></li>
+                <li><a href="{{ url_for('crud.crud_login') }}">CRUD Table</a></li>
+                <li><a href="/events/">Admin</a></li>
             </ul>
         </nav>
     </div>
 </header>
 </body>
 
-
-
-
-
-
-{#
-<!-- Navigation Bar from bootstrap
-This HTML is setup as a fragment allowing it to be "included" by other HTML files via Jinja2
--->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark"; style="font-family: monospace; font-size: larger">
-    <a class="navbar-brand" href="https://csp.nighthawkcodingsociety.com/">{{name}}</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
-            <a class="nav-link" href={{ url_for('index') }}>Home</a>
-            <a class="nav-link" href='/industry-sectors'>Industry Sectors</a>
-            <a class="nav-link" href="/other/calendar">Calendar</a>
-            <a class="nav-link" href="/events/">Admin</a>
-        </div>
-    </div>
-</nav>#}
