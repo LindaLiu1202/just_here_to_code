@@ -34,7 +34,7 @@ def events_all():
 def events_ilike(term):
     """filter Users table by term into JSON list """
     term = "%{}%".format(term)
-    table = Events.query.filter((Events.name.ilike(term)) | (Events.url.ilike(term)))
+    table = Events.query.filter((Events.name.ilike(term)) | (Events.description.ilike(term)))
     return [item.read() for item in table]
 
 
