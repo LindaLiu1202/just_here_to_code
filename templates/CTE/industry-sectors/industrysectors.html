@@ -12,14 +12,14 @@
 
   <button type="button" class="btn btn-primary col-3 m-2" data-bs-toggle="modal" data-bs-target="#psModal">
     <div class="row"><img class="imagefit" src="/static/industry-sectors/is-icons-ps.png"></div>
-    <div class="row text-center p-2">Transportation</div>
+    <div class="row text-center p-2">Public Services</div>
   </button>
     <!-- Modal -->
     <div class="modal fade" id="psModal" tabindex="-1" aria-labelledby="psModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="psModalLabel">Transportation Industry Sector</h5>
+            <h5 class="modal-title" id="psModalLabel">Public Services Industry Sector</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body row">
@@ -252,8 +252,51 @@
             </div>
 
     </div>
-    
-  
+
+<button type="button" class="btn btn-primary col-3 m-2" data-bs-toggle="modal" data-bs-target="#bizModal">
+    <div class="row"><img class="imagefit" src="/static/industry-sectors/is-icons-finance.png"></div>
+    <div class="row text-center p-2">Business & Finance</div>
+</button>
+
+<div class="modal fade" id="bizModal" tabindex="-1" aria-labelledby="bizModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="bizModalLabel">Business & Finance (Biz) Industry Sector</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body row">
+
+                <div class="col-auto p-3">
+                    <img class="imagefit" src="/static/industry-sectors/is-icons-finance.png">
+                </div>
+                <div class="col-10">
+                    <p>
+                        In the Business Industry Sector, students master business principles and procedures and have opportunities to dive deeper into areas such as accounting & finance, taxes, investments, and asset management.
+                        <br><br>
+                        Business Managment courses are offered at Del Norte and Westview High School and are even offered through Poway Virtual School Courses (PVC)
+                    </p>
+                </div>
+            </div>
+            <div class="modal-body row" id="bct-info" style="display: none">
+                <a href="https://www.sandiegouniontribune.com/pomerado-news/news/schools/story/2021-08-18/poway-unified-students-saw-a-path-to-building-a-tiny-house"><img src="/static/industry-sectors/buildconstimagearticle.png" width="390" height="213" style="padding: 5px;"></a>
+                <p>
+                    Click on the picture to read the San Diego Union Tribue article about the TIny Home PUSD students built!
+                </p>
+                <br>
+                <p>
+                    Construction Technology is offered at Poway High School.  All PUSD high school students are able to enroll in Construction courses regardless of their home high school!
+                </p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="revealinfo('bct-info')">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 </div>
   
