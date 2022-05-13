@@ -1,9 +1,12 @@
 """control dependencies to support CRUD app routes and APIs"""
 from flask import Blueprint, render_template, request, url_for, redirect, jsonify, make_response
+from flask_login import login_required, current_user
 from flask_restful import Api, Resource
 import requests
 
 from model import Events
+from cruddy.model import Users
+from cruddy.query import user_by_id
 
 # blueprint defaults https://flask.palletsprojects.com/en/2.0.x/api/#blueprint-objects
 app_events = Blueprint('events', __name__,
@@ -55,12 +58,13 @@ def event_by_name(name):
 
 # Default URL
 @app_events.route('/', methods=["GET", "POST"])
+@login_required
 def mainframe():
     """obtains all Events from table and loads Admin Form"""
-    if request.form:
-        key = request.form.get("key")
-        if key == "adminentrance":  # input field has content
-            return render_template("event_edit.html", table=events_all())
+    uo = user_by_id(current_user.userID)
+    print(uo.email)
+    if uo.email == "admin@admin.com":
+        return render_template("event_edit.html", table=events_all())
     return render_template("entry.html", methods=["POST"])
 
 
