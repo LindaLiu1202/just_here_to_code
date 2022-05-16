@@ -65,8 +65,7 @@ def mainframe():
     print(uo.email)
     if uo.email == "admin@admin.com":
         return render_template("event_edit.html", table=events_all())
-    return render_template("entry.html", methods=["POST"])
-
+    return render_template("entry.html")
 
 # CRUD create/add
 @app_events.route('/create/', methods=["POST"])
