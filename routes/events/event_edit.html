@@ -181,12 +181,12 @@
                 <div class="col-md-3">
                     <div class="p-5 mb-4 bg-dark text-white rounded-3">
                         <h2>Delete</h2>
-                        <form method="POST" ID="read" action={{url_for('events.delete')}} >
-                            <table id="read_table">
+                        <form method="POST" ID="delete" action={{url_for('events.delete')}} >
+                            <table id="delete_table">
                                 <tr><th><label for="delete_eventid">ID</label></th></tr>
                                 <tr>
                                     <td>
-                                        <select class="form-select" name="userid" id="delete_eventid">
+                                        <select class="form-select" name="eventid" id="delete_eventid">
                                             <optgroup label="eventid">
                                                 {% for row in table %}
                                                     <option label="{{ row['eventID'] }}">{{ row['eventID'] }}</option>
