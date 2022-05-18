@@ -123,10 +123,40 @@
         </div>
 
         <div class="container py-4">
+            
+            <div class="row mb-4 bg-dark text-white rounded-3">
+                <div class="p-5 mb-4 bg-dark text-white rounded-3">
+                    <h2>Update</h2>
+                    <form method="POST" ID="update" action={{url_for('events.update')}} >
+                        <table id="update_table">
+                            <tr>
+                                <th><label for="update_eventid">ID</label></th>
+                                <th><label for="update_name">Name</label></th>
+                                <th><label for="datetime">Date and Time (YYYY-MM-DD hh:mm:ss)</label></th>
+                                <th><label for="description">Description</label></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select class="form-select" name="eventid" id="update_eventid">
+                                        <optgroup label="eventid">
+                                            {% for row in table %}
+                                                <option label="{{ row['eventID'] }}">{{ row['eventID'] }}</option>
+                                            {% endfor %}
+                                        </optgroup>
+                                    </select>
+                                </td>
+                                <td><input class="form-control" type="text" name="name" id="update_name" placeholder="Home Page"></td>
+                                <td><input class="form-control" type="text" name="datetime" id="update_datetime" placeholder="YYYY-MM-DD hh:mm:ss"></td>
+                                <td><input class="form-control" type="text" name="description" id="update_description" placeholder="Event description"></td>
+                                <td><input class="btn btn-primary" type="submit" value="Update"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
 
             <div class="row mb-4 bg-dark text-white rounded-3">
-
-                <div class="col-md-3">
+                <div class="col-md-6">
                     <div class="p-5 mb-4 bg-dark text-white rounded-3">
                         <h2>Read</h2>
                         <form method="POST" ID="read" action={{url_for('events.read')}} >
@@ -152,33 +182,10 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="p-5 mb-4 bg-dark text-white rounded-3">
-                        <h2>Update</h2>
-                        <form method="POST" ID="update" action={{url_for('events.update')}} >
-                            <table id="update_table">
-                                <tr>
-                                    <th><label for="update_eventid">ID</label></th>
-                                    <th><label for="update_name">Name</label></th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <select class="form-select" name="eventid" id="update_eventid">
-                                            <optgroup label="eventid">
-                                                {% for row in table %}
-                                                    <option label="{{ row['eventID'] }}">{{ row['eventID'] }}</option>
-                                                {% endfor %}
-                                            </optgroup>
-                                        </select>
-                                    </td>
-                                    <td><input class="form-control" type="text" name="name" id="update_name" placeholder="Home Page" required></td>
-                                    <td><input class="btn btn-primary" type="submit" value="Update"></td>
-                                </tr>
-                            </table>
-                        </form>
-                    </div>
+                    
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-6">
                     <div class="p-5 mb-4 bg-dark text-white rounded-3">
                         <h2>Delete</h2>
                         <form method="POST" ID="delete" action={{url_for('events.delete')}} >
