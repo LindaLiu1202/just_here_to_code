@@ -1,0 +1,225 @@
+{% extends "layouts/base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+{% block body %}
+<head>
+    <meta charset="UTF-8">
+    <title>Meet Our Team</title>
+
+<style>
+    body{
+        text-align: center;
+    }
+    .section-title h2{
+        text-transform: uppercase;
+        font-size: 40px;
+    }
+    .section-title{
+        margin:3% 0;
+    }
+    .section-title p{
+        font-size: 20px;
+    }
+    .single-team{
+        padding-bottom: 70px;
+        position:relative;
+        z-index:1;
+        overflow: hidden;
+        box-shadow: 5px 5px 15px #000;
+        width: 250px:
+    }
+    .team-img{
+        position: relative;
+        z-index:5;
+        overflow: hidden;
+    }
+    .team-img img{
+        width: 100%;
+        transition: 0.3s;
+    }
+    .single-team:hover .team-img img{
+        transform: scale(1,1);
+    }
+    .team-content{
+        height: 85px;
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        overflow: hidden;
+        bottom: 0;
+        transition: all 0.4s;
+        background: #9BA7C0;
+        z-index: 5;
+    }
+    .single-team:hover .team-content{
+        height: 150px;
+    }
+    .team-info{
+        padding: 5px 20px 5px 20px;
+        transition: all .5s;
+    }
+    .linda{
+        display: -webkit-box;
+        gap: 30px;
+    }
+
+</style>
+</head>
+
+<body>
+<div class="team-area">
+
+    <div class="col-md-12">
+        <div class="section-title text-container">
+            <h2>Meet Our Team</h2>
+            <p>Meet Our Staff Members and Team Members</p>
+        </div>
+    </div>
+    <br>
+
+<table style="width: 80%; padding: 10px; position: center; margin-left: 11%;">
+    <tr>
+        <td>
+            <div class="linda">
+                <div class="single-team">
+                    <div class="team-img">
+                        <img src="/static/team/placeholder.jpg">
+                    </div>
+                    <div class="team-content">
+                        <div class="team-info">
+                            <h3>Name1</h3>
+                            <p>Scrum Master</p>
+                        </div>
+                        <p class="team-text">Quote</p>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+        </td>
+        <td>
+            <div class="linda">
+                <div class="single-team">
+                    <div class="team-img">
+                        <img src="/static/team/placeholder.jpg">
+                    </div>
+                    <div class="team-content">
+                        <div class="team-info">
+                            <h3>Name2</h3>
+                            <p>Designer</p>
+                        </div>
+                        <p class="team-text">Quote</p>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+        </td>
+        <td>
+            <div class="linda">
+                <div class="single-team">
+                    <div class="team-img">
+                        <img src="/static/team/placeholder.jpg">
+                    </div>
+                    <div class="team-content">
+                        <div class="team-info">
+                            <h3>Name3</h3>
+                            <p>Technical Officer</p>
+                        </div>
+                        <p class="team-text">Quote</p>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+        </td>
+        <td>
+            <div class="linda">
+                <div class="single-team">
+                    <div class="team-img">
+                        <img src="/static/team/placeholder.jpg">
+                    </div>
+                    <div class="team-content">
+                        <div class="team-info">
+                            <h3>Name4</h3>
+                            <p>Deployment</p>
+                        </div>
+                        <p class="team-text">Quote</p>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="linda">
+                <div class="single-team">
+                    <div class="team-img">
+                        <img src="/static/team/placeholder.jpg">
+                    </div>
+                    <div class="team-content">
+                        <div class="team-info">
+                            <h3>Name5</h3>
+                            <p>Role</p>
+                        </div>
+                        <p class="team-text">Quote</p>
+                    </div>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="linda">
+                <div class="single-team">
+                    <div class="team-img">
+                        <img src="/static/team/placeholder.jpg">
+                    </div>
+                    <div class="team-content">
+                        <div class="team-info">
+                            <h3>Name6</h3>
+                            <p>Role</p>
+                        </div>
+                        <p class="team-text">Quote</p>
+                    </div>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="linda">
+                <div class="single-team">
+                    <div class="team-img">
+                        <img src="/static/team/placeholder.jpg">
+                    </div>
+                    <div class="team-content">
+                        <div class="team-info">
+                            <h3>Name7</h3>
+                            <p>Role</p>
+                        </div>
+                        <p class="team-text">Quote</p>
+                    </div>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="linda">
+                <div class="single-team">
+                    <div class="team-img">
+                        <img src="/static/team/placeholder.jpg">
+                    </div>
+                    <div class="team-content">
+                        <div class="team-info">
+                            <h3>Name8</h3>
+                            <p>Role</p>
+                        </div>
+                        <p class="team-text">Quote</p>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+<br><br><br>
+
+</div>
+{% endblock %}
+</body>
+</html>
