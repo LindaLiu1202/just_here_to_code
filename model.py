@@ -56,10 +56,10 @@ class Events(db.Model):
         """only updates values with length"""
         if len(name) > 0:
             self.name = name
-        if len(date) > 0:
-            self.datetime = datetime
-        if len(description) > 0:
-            self.description = description
+        # if len(date) > 0:
+        #     self.datetime = datetime
+        # if len(description) > 0:
+        #     self.description = description
         db.session.commit()
         return self
 
