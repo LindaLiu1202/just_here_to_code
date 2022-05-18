@@ -28,18 +28,6 @@
         </nav>
     </div>
 
-    {% if current_user.is_authenticated %}
-    <div class="dropdown-menu">
-        <button class="menu-btn">{{ current_user.name }}</button>
-        <div class="menu-content">
-            <a class="links-hidden" href="{{ url_for('crud.logout') }}">Logout</a>
-        </div>
-    </div>
-
-    {% else %}
-        <a class="nav-link" href="{{ url_for('crud.crud_login') }}"><button class="btn btn-danger">Login</button></a>
-    {% endif %}
-
 </header>
 </body>
 
