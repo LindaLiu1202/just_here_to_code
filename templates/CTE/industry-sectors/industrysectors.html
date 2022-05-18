@@ -10,93 +10,6 @@
 {% block body %}
 <div class="row justify-content-center mt-5" style="width: 99%">
 
-  <button type="button" class="btn btn-primary col-3 m-2" data-bs-toggle="modal" data-bs-target="#psModal">
-    <div class="row"><img class="imagefit" src="/static/industry-sectors/is-icons-ps.png"></div>
-    <div class="row text-center p-2">Public Services</div>
-  </button>
-    <!-- Modal -->
-    <div class="modal fade" id="psModal" tabindex="-1" aria-labelledby="psModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="psModalLabel">Public Services Industry Sector</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body row">
-  
-            <div class="col-auto p-3">
-              <img class="imagefit" src="/static/industry-sectors/is-icons-ps.png">
-            </div>
-            <div class="col-8">
-              <p>
-                Interested in becoming a fire fighter, EMT, paramedic, nurse, doctor or first responder?  Wnat to participate in hands-on classes tha tprovide you with life saving skills?
-                <br><br>
-                Check out the Fire Science and First Responder courses offered at Mt. Carmel High School!
-                <br><br>
-                These courses are open to all 9-12 grade students in PUSD.
-              </p>
-            </div>
-          </div>
-          <div class="modal-body row" id="ps-info" style="display: none">
-            <h3>Public Services Industry Sector Pathways </h3>
-            <p>
-              Public Safety<br>
-              Emergency Response<br>
-              Legal Practices<br>
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" onclick="revealinfo('ps-info')">Learn More</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-  <button type="button" class="btn btn-primary col-3 m-2" data-bs-toggle="modal" data-bs-target="#transportModal">
-    <div class="row"><img class="imagefit" src="/static/industry-sectors/is-icons-trans.png"></div>
-    <div class="row text-center p-2">Transportation</div>
-  </button>
-    <!-- Modal -->
-    <div class="modal fade" id="transportModal" tabindex="-1" aria-labelledby="transportModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="transportModalLabel">Transportation Industry Sector</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body row">
-  
-            <div class="col-auto p-3">
-              <img class="imagefit" src="/static/industry-sectors/is-icons-trans.png">
-            </div>
-            <div class="col-8">
-              <p>
-                This sector is designed to provide a foundation in transportation services for all 
-                industrial technology education students in California. There are eight focus areas 
-                that fall under the Transportation sector, each with different career opportunities. 
-                The focus areas are On-Road; Off-Road; Stationary; Rail; Water/Sea; Air; Space; 
-                and Small Engines and Specialty Equipment.        
-                <br><br>
-                The pathways in the Transportation sector emphasize real-world, occupationally 
-                relevant experiences of significant scope and depth in three areas: Operations, 
-                Structural Repair and Refinishing, and Systems Diagnostics, Service, and Repair.
-              </p>
-            </div>
-          </div>
-          <div class="modal-body row" id="transport-info" style="display: none">
-            <iframe style="width:100%; height:50vw" src="https://www.cde.ca.gov/ci/ct/sf/documents/transportation.pdf" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" onclick="revealinfo('transport-info')">Learn More</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
 <button type="button" class="btn btn-primary col-3 m-2" data-bs-toggle="modal" data-bs-target="#agricultureModal">
   <div class="row"><img class="imagefit" src="/static/industry-sectors/is-icons-agNatural.png"></div>
   <div class="row text-center p-2">Agriculture and Natural Resources</div>
@@ -114,7 +27,7 @@
           <div class="col-auto p-3">
             <img class="imagefit" src="/static/industry-sectors/is-icons-agNatural.png">
           </div>
-          <div class="col-10">
+          <div class="col-8">
             <p>
             The Agriculture and Natural Resources sector is designed to provide a foundation in agriculture for all students.  The pathways emphasize real-world, occupationally relevant experiences.
             <br><br>
@@ -153,7 +66,7 @@
                     <div class="col-auto p-3">
                         <img class="imagefit" src="/static/industry-sectors/is-icons-ame.png">
                     </div>
-                    <div class="col-10">
+                    <div class="col-8">
                         <p>
                             AME is offered at all six high schools in PUSD and is divided into THREE different pathways.
                             <br><br>
@@ -225,11 +138,11 @@
                         <div class="col-auto p-3">
                             <img class="imagefit" src="/static/industry-sectors/is-icons-bldgConst.png">
                         </div>
-                        <div class="col-10">
+                        <div class="col-8">
                             <p>
                                 In the Construction Pathway students engage in an instructional program that integrates academic and technical preparation and focuses on career awareness, career exploration, and skill preparation. This is a hands-on, project-based, and work-based pathway.
                                 <br><br>
-                                Click 'learn more' below for more information.
+                                Click 'Learn More' below for more information.
                             </p>
                         </div>
                     </div>
@@ -270,11 +183,14 @@
                 <div class="col-auto p-3">
                     <img class="imagefit" src="/static/industry-sectors/is-icons-finance.png">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p>
                         In the Business Industry Sector, students master business principles and procedures and have opportunities to dive deeper into areas such as accounting & finance, taxes, investments, and asset management.
                         <br><br>
                         Business Management courses are offered at Del Norte and Westview High School and are even offered through Poway Virtual School Courses (PVC)
+                    </p>
+                    <p>
+                        Click 'Learn More' for a list of offered courses at PUSD.
                     </p>
                 </div>
             </div>
@@ -322,6 +238,9 @@
                     <p>
                         The Child Development Pathway provides students with the skills and knowledge they need to pursue careers in child care and related fields.
                     </p>
+                    <p>
+                        Click 'Learn More' for a list of offered courses at PUSD.
+                    </p>
                 </div>
             </div>
             <div class="modal-body row" id="educ-info" style="display: none">
@@ -361,9 +280,12 @@
                 <div class="col-auto p-3">
                     <img class="imagefit" src="/static/industry-sectors/is-icons-engine.png">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p>
                         The Engineering and architecture pathway emphasizes real-world occupationally relevant experiences that will prepare students for life beyond high school. These courses include classroom, laboratory, hand-on contextual learning; project-and-work- based instruction; and leadership and interpersonal skills development.
+                    </p>
+                    <p>
+                        Click 'Learn More' for a list of offered courses at PUSD.
                     </p>
                 </div>
             </div>
@@ -392,8 +314,147 @@
             </div>
         </div>
     </div>
-
 </div>
+
+<button type="button" class="btn btn-primary col-3 m-2" data-bs-toggle="modal" data-bs-target="#psModal">
+    <div class="row"><img class="imagefit" src="/static/industry-sectors/is-icons-ps.png"></div>
+    <div class="row text-center p-2">Public Services</div>
+</button>
+<!-- Modal -->
+<div class="modal fade" id="psModal" tabindex="-1" aria-labelledby="psModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="psModalLabel">Public Services Industry Sector</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body row">
+
+                <div class="col-auto p-3">
+                    <img class="imagefit" src="/static/industry-sectors/is-icons-ps.png">
+                </div>
+                <div class="col-8">
+                    <p>
+                        Interested in becoming a fire fighter, EMT, paramedic, nurse, doctor or first responder?  Wnat to participate in hands-on classes tha tprovide you with life saving skills?
+                        <br><br>
+                        Check out the Fire Science and First Responder courses offered at Mt. Carmel High School!
+                        <br><br>
+                        These courses are open to all 9-12 grade students in PUSD.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-body row" id="ps-info" style="display: none">
+                <h3>Public Services Industry Sector Pathways </h3>
+                <p>
+                    Public Safety<br>
+                    Emergency Response<br>
+                    Legal Practices<br>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="revealinfo('ps-info')">Learn More</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<button type="button" class="btn btn-primary col-3 m-2" data-bs-toggle="modal" data-bs-target="#transportModal">
+    <div class="row"><img class="imagefit" src="/static/industry-sectors/is-icons-trans.png"></div>
+    <div class="row text-center p-2">Transportation</div>
+</button>
+<!-- Modal -->
+<div class="modal fade" id="transportModal" tabindex="-1" aria-labelledby="transportModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="transportModalLabel">Transportation Industry Sector</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body row">
+
+                <div class="col-auto p-3">
+                    <img class="imagefit" src="/static/industry-sectors/is-icons-trans.png">
+                </div>
+                <div class="col-8">
+                    <p>
+                        This sector is designed to provide a foundation in transportation services for all
+                        industrial technology education students in California. There are eight focus areas
+                        that fall under the Transportation sector, each with different career opportunities.
+                        The focus areas are On-Road; Off-Road; Stationary; Rail; Water/Sea; Air; Space;
+                        and Small Engines and Specialty Equipment.
+                        <br><br>
+                        The pathways in the Transportation sector emphasize real-world, occupationally
+                        relevant experiences of significant scope and depth in three areas: Operations,
+                        Structural Repair and Refinishing, and Systems Diagnostics, Service, and Repair.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-body row" id="transport-info" style="display: none">
+                <iframe style="width:100%; height:50vw" src="https://www.cde.ca.gov/ci/ct/sf/documents/transportation.pdf" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="revealinfo('transport-info')">Learn More</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button type="button" class="btn btn-primary col-3 m-2" data-bs-toggle="modal" data-bs-target="#hsmtModal">
+    <div class="row"><img class="imagefit" src="/static/industry-sectors/is-icons-health-med.png"></div>
+    <div class="row text-center p-2">Health Science & Medical Technology</div>
+</button>
+
+<div class="modal fade" id="hsmtModal" tabindex="-1" aria-labelledby="hsmtModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="hsmtModalLabel">Health Science & Medical Technology (HSMT) Industry Sector</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body row">
+
+                <div class="col-auto p-3">
+                    <img class="imagefit" src="/static/industry-sectors/is-icons-health-med.png">
+                </div>
+                <div class="col-8">
+                    <p>
+                        The Health Science industry sector is focued on planning, managing, and providing therapeutic services, diagnostic services, health informatics, support services, and biotechology reserach adn development.
+                    </p>
+                    <p>
+                        PUSD offers a variety of health science courses at many of our high schools across the district.
+                    </p>
+                    <p>
+                        Click 'Learn More' for a list of offered courses at PUSD.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-body row" id="hsmt-info" style="display: none">
+                <h5>
+                    Here is a list of the offered courses:
+                </h5>
+                <br>
+                <p>
+                    Biomedical Technology 1-2 (MCHS, RBHS) <br>
+                    PLTW Principles of Biomedical Sciences 1-2 (DNHS)<br>
+                    PLTW Human Body Systems 1-2 (DNHS, WHS)<br>
+                    PLTW Honors Medical Interventions 1-2 (DNHS, WHS)<br>
+                    Sports Medicine and Athletic Training 1-2 (MCHS)<br>
+                    Sports Medicine and Athletic Training 3-4 (MCHS)<br>
+                </p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="revealinfo('hsmt-info')">Learn More</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 </div>
   
