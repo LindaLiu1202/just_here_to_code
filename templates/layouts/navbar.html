@@ -12,16 +12,16 @@
 <header>
     <div class="container">
 
-        <img src="{{ url_for('static', filename='logo.png') }}" height="65" alt="logo" class="logo">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" height="65" alt="logo" class="logo">
 
         <nav>
             <ul>
-                <li><a href={{ url_for('index') }}>Home</a></li>
+                <li><a href={{ url_for('index') }}>Homepage</a></li>
                 <li><a href={{ url_for('industry') }}>Industry Sectors</a></li>
                 <li><a href={{ url_for('crud.crud_login2') }}>User Calendar</a></li>
-                <li><a href="{{ url_for('misc.calendar') }}">Event Calendar</a></li>
+                <li><a href="{{ url_for('misc.calendar') }}">Event Announcements</a></li>
                 <li><a href="{{ url_for('crud.crud_login') }}">CRUD Table</a></li>
-                <li><a href="/events/">Admin</a></li>
+                <li><a href="/events/">Admin Login</a></li>
             </ul>
         </nav>
     </div>

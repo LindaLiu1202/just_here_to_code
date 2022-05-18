@@ -8,7 +8,6 @@
         <title>Calendar</title>
     </head>
     <body>
-    <button><a href = {{ url_for ('crud.crud_login2' )}}> Logout </a></button>
     <div style="margin-top:5%; margin-left: auto; margin-right: auto; text-align: center; font-family: monospace" id="cal-wrap">
         <h1 style="color: olivedrab">Event Calendar</h1>
         <p>
@@ -34,9 +33,15 @@
             <input id="evt-del" type="button" value="Delete"/>
             <input id="evt-save" type="submit" value="Save"/>
         </form>
+        <br>
+        <center>
+        <button style="align-content: center; font-family: monospace; color: darkslategrey"><a style="font-family: monospace" href = {{ url_for ('crud.crud_login' )}}> Logout </a></button>
+        </center>
+
     </div>
+    <br><br><br>
+
     </body>
     </html>
-
 
 {% endblock %}

@@ -13,7 +13,7 @@
 <!-- CONTENT (in <body>), content for this page -->
 {% block body %}
     <div class="container py-4">
-        <header class="pb-3 mb-4 border-bottom border-primary text-dark">
+        <header class="pb-3 mb-4 border-primary text-dark" style="text-align: center">
             <span class="fs-4" style="color: white;">SQL CRUD Admin Page</span>
         </header>
         <button><a href = {{ url_for ('crud.crud_login' )}}> Logout </a></button>
@@ -184,23 +184,5 @@
         </div>
 
     </div>
-
-    <!-- Back end SQL data definition code (SQLalchemy) -->
-    <div class="container py-4">
-        <h1 id="BE-MODEL">Back End Definition Code (Model) </h1>
-        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fnighthawkcoders%2Fnighthawk_csp%2Fblob%2Fmaster%2Fcrud%2Fmodel.py&style=github&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
-    </div>
-
-    <!-- Front End HTML, shows this file -->
-    <div class="container py-4">
-        <h1 id="FE-VIEW">Front End HTML Code (View) </h1>
-        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fnighthawkcoders%2Fnighthawk_csp%2Fblob%2Fmaster%2Fcrud%2Ftemplates%2Fcrud%2Fcrud.html&style=github&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
-    </div>
-
-    <!-- Back Route code -->
-    <div class="container py-4">
-        <h1 id="BE-CONTROL">Back End Form Request and API Code (Control)</h1>
-        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fnighthawkcoders%2Fnighthawk_csp%2Fblob%2Fmaster%2Fcrud%2Fapp_crud.py&style=github&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
-    </div>
-
+    <br><br><br>
 {% endblock %}
