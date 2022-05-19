@@ -1,0 +1,35 @@
+{% extends "layouts/base.html" %}
+
+{% block body %}
+<style>
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+    margin: auto;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5%;
+    padding-bottom: 15px;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #212529;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    min-height: 100%;
+}
+</style>
+
+<div class="text-white text-center fs-1 my-3">
+    Internships and Work Experience
+</div>
+
+{% endblock %}

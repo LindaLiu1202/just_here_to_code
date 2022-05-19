@@ -25,6 +25,10 @@ app.register_blueprint(app_events)
 def index():
     return render_template("index.html")
 
+@app.route('/internships-and-work')
+def internwork():
+    return render_template('internandwork.html')
+
 @app.route('/industry-sectors/')
 def industry():
     return render_template("CTE/industry-sectors/industrysectors.html")
