@@ -1,6 +1,12 @@
 {% extends "layouts/base.html" %}
 
 {% block body %}
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
 <style>
 table, th, td {
     border: 1px solid black;
@@ -28,8 +34,31 @@ body {
 }
 </style>
 
-<div class="text-white text-center fs-1 my-3">
+<!-- <div class="text-white text-center fs-1 my-3">
     Internships and Work Experience
+</div> -->
+
+<div class="float-center col-8 mx-auto">
+<div class="jumbotron bg-light p-3" style="font-family: 'Montserrat', sans-serif;">
+    <h1 class="display-4">Internships and Work-Based Learning</h1>
+    <p class="lead">Work-Based Learning (WBL) are opportunities that allow students to apply learning through practical experience that develops knowledge and skills necessary for success in careers and post-secondary education.</p>
+    <hr class="my-4">
+    <p> <b>Examples of WBL: </b> <br> Guest Speakers,
+        Industry Tours,
+        Career Fairs,
+        Job Shadowing,
+        Informational Interviews,
+        Internships,
+        Work Experience,
+        Integrated Projects,
+        Student-Run Enterprises
+        </p>
+    <p class="lead">
+      <a class="btn btn-primary" href="#" role="button">Middle School Career Development Continuum</a>
+      <a class="btn btn-primary" href="#" role="button">High School Career Development Continuum</a>
+    </p>
+  </div>
+</div>
 </div>
 
 {% endblock %}
