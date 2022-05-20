@@ -42,6 +42,10 @@ def authorize():
 def team():
     return render_template("team.html")
 
+@app.route('/CTE')
+def CTE():
+    return render_template("CTE/info-pages/CTE.html")
+
 @app.route('/calendar/')
 def calendar():
     return render_template("calendar.html")
