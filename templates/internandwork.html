@@ -32,14 +32,16 @@ body {
     -o-animation: fadein 2s;
     min-height: 100%;
 }
+
+
 </style>
 
 <!-- <div class="text-white text-center fs-1 my-3">
     Internships and Work Experience
 </div> -->
 
-<div class="float-center col-8 mx-auto my-2">
-<div class="jumbotron bg-light p-3" style="font-family: 'Montserrat', sans-serif;">
+<div class="float-center mx-auto">
+<div class="jumbotron bg-light p-3 mx-auto" style="font-family: 'Montserrat', sans-serif;">
     <h1 class="display-4">Internships and Work-Based Learning</h1>
     <p class="lead">Work-Based Learning (WBL) are opportunities that allow students to apply learning through practical experience that develops knowledge and skills necessary for success in careers and post-secondary education.</p>
     <hr class="my-4">
@@ -59,6 +61,18 @@ body {
     </p>
   </div>
 </div>
+</div>
+
+<div class="d-flex my-3"></div>
+
+<div class="d-flex justify-content-center mx-auto">
+    <a class="btn btn-primary btn-lg mx-auto" role="button" onClick="document.getElementById('moreinfo').style.visibility = 'visible';"> More Info </a>
+</div>
+
+<div class="d-flex my-5"></div>
+
+<div id="moreinfo" class="float-center mx-auto" style="visibility: hidden">
+    <div class="jumbotron bg-light p-3 mx-auto" style="font-family: 'Montserrat', sans-serif;"></div>
 </div>
 
 {% endblock %}
