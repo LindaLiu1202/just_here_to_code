@@ -16,15 +16,20 @@
     }
     table{
         border-spacing: 10px;
+        width: 80%;
     }
     table tr{
         display: flex;
         border: 1px solid black;
         border-radius: 8px;
     }
+    .arrow {
+        padding-left: 10px;
+        padding-top: 5px;
+    }
     table p{
         margin-left:50px;
-        color:white;
+        color: whitesmoke;
     }
     tr:nth-child(1){
         background-color: #1ab892;
@@ -56,37 +61,37 @@
 <table>
     <tr>
         <td>
-            <img src="/static/info-pages/arrow.png" alt="arrow" style="width:100px; height:50px; margin-top:12px;" />
+            <img class="arrow" src="/static/info-pages/arrow.png" alt="arrow" style="width:100px; height:50px; margin-top:12px;" />
         </td>
         <td><br>
-            <p>Students can get real world, hands on experiences in a career area that interests them and that connects to their core academics</p>
+            <p>Students can get real world, hands on experiences in a career area that interests them and connects to their core academics.</p>
             <br>
         </td>
     </tr>
     <tr>
         <td><br>
-            <img src="/static/info-pages/arrow.png" alt="arrow" style="width:100px; height:50px; margin-top:-12px;" />
+            <img class="arrow" src="/static/info-pages/arrow.png" alt="arrow" style="width:100px; height:50px; margin-top:-12px;" />
         </td>
         <td><br>
-            <p>Internships and work-based learning opportunities embedded into most courses to provide meaningful experiences</p>
+            <p>Internships and work-based learning opportunities embedded into most courses to provide meaningful experiences.</p>
             <br>
         </td>
     </tr>
     <tr>
         <td><br>
-            <img src="/static/info-pages/arrow.png" alt="arrow" style="width:100px; height:50px; margin-top:-12px;" />
+            <img class="arrow" src="/static/info-pages/arrow.png" alt="arrow" style="width:100px; height:50px; margin-top:-12px;" />
         </td>
         <td><br>
-            <p>Courses are infused with essential skills needed to prepare students for success in college and career</p>
+            <p>Courses are infused with essential skills needed to prepare students for success in college and career.</p>
             <br>
         </td>
     </tr>
     <tr>
         <td><br>
-            <img src="/static/info-pages/arrow.png" alt="arrow" style="width:100px; height:50px; margin-top:-12px;" />
+            <img class="arrow" src="/static/info-pages/arrow.png" alt="arrow" style="width:100px; height:50px; margin-top:-12px;" />
         </td>
         <td><br>
-            <p>Possibility to earn industry certifications and early college credit through articulated or dual enrollment courses</p>
+            <p>Possibility to earn industry certifications and early college credit through articulated or dual enrollment courses.</p>
         <br>
         </td>
     </tr>
@@ -97,10 +102,11 @@
 <br><br><br>
 </center>
 
-<div style="background-color: #7bc3d6;">
-<br>
+<div style="background-color: #7bc3d6">
+<br><br>
     <h2 style="text-align:center">About Career Technical Education</h2>
 <br>
+    <div style="margin-right: 90px; margin-left: 90px">
     <p>
         Poway Unified School District and our entire community value the key role that Career Technical Education plays in helping to fulfill the District's mission of college, career and life readiness for every student.
         <br>
@@ -128,6 +134,7 @@
 </vl>
     <p>Career Pathways by School Site</p>
 <br>
+    </div>
 </div>
 
 {% endblock %}

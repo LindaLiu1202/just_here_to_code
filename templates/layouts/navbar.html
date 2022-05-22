@@ -33,7 +33,6 @@
         }
 
         .dropdown:hover .dropdown-content {display: block;}
-
     </style>
 </head>
 </html>
@@ -48,19 +47,16 @@
         <nav>
             <ul>
                 <li><a class="main" href={{ url_for('index') }}>Homepage</a></li>
-                <li><a href={{ url_for('team') }}>Meet Our Team</a></li>
-                <li><a href={{ url_for('CTE') }}>What is CTE</a></li>
+                <li><a class="main" href={{ url_for('CTE') }}>What is CTE?</a></li>
                 <li><a class="main" href={{ url_for('industry') }}>Industry Sectors</a></li>
-                <li><a class="main" href={{ url_for('crud.crud_login2') }}>User Calendar</a></li>
-                <li><a class="main" href="{{ url_for('misc.calendar') }}">Event Announcements</a></li>
-                <li><a class="main" href="{{ url_for('crud.crud_login') }}">CRUD Table</a></li>
-                <li><a class="main" href="/events/">Admin Login</a></li>
+                <li><a class="main" href={{ url_for('team') }}>Meet Our Team</a></li>
                 <li><div class="dropdown">
-                    <a class="main">Dropdown</a>
+                    <a class="main">Resources</a>
                     <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <a href={{ url_for('crud.crud_login2') }}>User Calendar</a>
+                        <a href="{{ url_for('misc.eventcalendar') }}">Event Announcements</a>
+                        <a href="/events/">Admin Login</a>
+                        <a href="{{ url_for('crud.crud_login') }}">CRUD Table</a>
                     </div>
                 </div></li>
             </ul>
