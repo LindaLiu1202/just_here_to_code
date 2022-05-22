@@ -101,9 +101,11 @@ def update():
     if request.form:
         eventid = request.form.get("eventid")
         name = request.form.get("name")
+        datetime = request.form.get("datetime")
+        description = request.form.get("description")
         po = event_by_id(eventid)
         if po is not None:
-            po.update(name)
+            po.update(name, datetime, description)
     return render_template("event_edit.html", table=events_all())
 
 

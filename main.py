@@ -25,6 +25,10 @@ app.register_blueprint(app_events)
 def index():
     return render_template("index.html")
 
+@app.route('/internships-and-work')
+def internwork():
+    return render_template('internandwork.html')
+
 @app.route('/industry-sectors/')
 def industry():
     return render_template("CTE/industry-sectors/industrysectors.html")
@@ -33,6 +37,14 @@ def industry():
 def authorize():
     return render_template("authorize.html")
 
+
+@app.route('/team')
+def team():
+    return render_template("team.html")
+
+@app.route('/CTE')
+def CTE():
+    return render_template("CTE/info-pages/CTE.html")
 
 @app.route('/calendar/')
 def calendar():

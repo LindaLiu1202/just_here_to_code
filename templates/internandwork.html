@@ -1,0 +1,84 @@
+{% extends "layouts/base.html" %}
+
+{% block body %}
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<style>
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+    margin: auto;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5%;
+    padding-bottom: 15px;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #212529;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    min-height: 100%;
+}
+
+
+</style>
+
+<!-- <div class="text-white text-center fs-1 my-3">
+    Internships and Work Experience
+</div> -->
+
+<div class="float-center mx-auto">
+<div class="jumbotron bg-light p-3 mx-auto" style="font-family: 'Montserrat', sans-serif;">
+    <h1 class="display-4">Internships and Work-Based Learning</h1>
+    <p class="lead">Work-Based Learning (WBL) are opportunities that allow students to apply learning through practical experience that develops knowledge and skills necessary for success in careers and post-secondary education.</p>
+    <hr class="my-4">
+    <p class="text-center"> <b>Examples of WBL: </b> <br> Guest Speakers,
+        Industry Tours,
+        Career Fairs,
+        Job Shadowing,
+        Informational Interviews,
+        Internships,
+        Work Experience,
+        Integrated Projects,
+        Student-Run Enterprises
+    </p>
+    <div class="d-flex justify-content-center">
+      <a target="_blank" class="btn btn-primary mx-auto" href="https://myworkforceconnection.org/wp-content/uploads/2019/08/SDIC_MS-Career-Development-Continuum_2.pdf" role="button">Middle School Career Development Continuum</a>
+      <a target="_blank" class="btn btn-primary mx-auto" href="https://myworkforceconnection.org/wp-content/uploads/2020/01/SDIC_HS-Career-Development-Continuum_2.pdf" role="button">High School Career Development Continuum</a>
+    </p>
+  </div>
+</div>
+</div>
+
+<div class="d-flex my-3"></div>
+
+<div class="d-flex justify-content-center mx-auto">
+    <a id="infobutton" class="btn btn-primary btn-lg mx-auto" role="button" onClick="document.getElementById('moreinfo').style.visibility = 'visible'; document.getElementById('infobutton').style.display = 'none';"> More Info </a>
+</div>
+
+<div class="d-flex my-5"></div>
+
+<div id="moreinfo" class="float-center mx-auto" style="visibility: hidden">
+    <div class="jumbotron bg-light p-3 mx-auto" style="font-family: 'Montserrat', sans-serif;">
+        <h1 class="display-6"> Below are videos of some CTE work-based learning interships</h1>
+        <hr class="my-4">
+        <div class="d-flex justify-content-center"> 
+            <iframe type="text/html" width="800" height="450" src="//www.youtube.com/embed/y32JZMXLlkg?fs=1&amp;rel=0&amp;enablejsapi=1&amp;version=3" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
