@@ -11,16 +11,88 @@
     h1{
         font-size: 40px;
     }
+    table{
+        border-spacing: 10px;
+    }
+    table tr{
+        display: flex;
+        border: 1px solid black;
+        border-radius: 8px;
+    }
+    table p{
+        margin-left:50px;
+        color:white;
+    }
+    tr:nth-child(1){
+        background-color: #1ab892;
+    }
+    tr:nth-child(2){
+        background-color: #3a57a8;
+    }
+    tr:nth-child(3){
+        background-color: #54c8eb;
+    }
+    tr:nth-child(4){
+        background-color: #d3e15b;
+    }
+    tr:hover {
+        background-color: #1E3F66;
+    }
 </style>
 <body>
     <br><br>
-<center><h1> What is Career Technical Education? </h1>
+<center>
+    <h1> What is Career Technical Education? </h1>
     <br><br>
 
     <iframe width="640" height="385" src="https://www.youtube.com/embed/nmmYOAUeoUM" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <br><br><br>
+    <h2>Why Should Students Enroll in CTE Pathways?</h2>
+    <br>
+<table>
+    <tr>
+        <td>
+            <img src="/static/info-pages/arrow.png" alt="arrow" style="width:100px; height:50px; margin-top:12px;" />
+        </td>
+        <td><br>
+            <p>Students can get real world, hands on experiences in a career area that interests them and that connects to their core academics</p>
+            <br>
+        </td>
+    </tr>
+    <tr>
+        <td><br>
+            <img src="/static/info-pages/arrow.png" alt="arrow" style="width:100px; height:50px; margin-top:-12px;" />
+        </td>
+        <td><br>
+            <p>Internships and work-based learning opportunities embedded into most courses to provide meaningful experiences</p>
+            <br>
+        </td>
+    </tr>
+    <tr>
+        <td><br>
+            <img src="/static/info-pages/arrow.png" alt="arrow" style="width:100px; height:50px; margin-top:-12px;" />
+        </td>
+        <td><br>
+            <p>Courses are infused with essential skills needed to prepare students for success in college and career</p>
+            <br>
+        </td>
+    </tr>
+    <tr>
+        <td><br>
+            <img src="/static/info-pages/arrow.png" alt="arrow" style="width:100px; height:50px; margin-top:-12px;" />
+        </td>
+        <td><br>
+            <p>Possibility to earn industry certifications and early college credit through articulated or dual enrollment courses</p>
+        <br>
+        </td>
+    </tr>
+</table>
+
+<br><br><br>
+<img src="https://www.powayusd.com/getmedia/aefdb28a-7034-441b-b562-5b69214a4137/CTE-Pathways-Levels-of-Courses.png.aspx?width=844&height=474">
+<br><br><br>
 </center>
-
-
 
 {% endblock %}
 </body>
