@@ -37,6 +37,8 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 
         .logo {
             float: left;
+            height: 69px;
+            padding-top: 5px;
         }
 
         nav {
@@ -45,8 +47,8 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 
         nav ul {
             margin: 0;
-            padding: 0;
             list-style: none;
+            padding: 0 0 20px;
         }
 
         nav li {
@@ -56,29 +58,29 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
             position: relative;
         }
 
-        nav a {
+        nav .main {
             color: white;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 14px;
         }
 
-        nav a::before {
+        nav .main::before {
             content: '';
             display: block;
             height: 5px;
             width: 0;
             background-color: #528AAE;
-            position: absolute;
+            position: relative;
             top: 0;
             transition: all ease-in-out 250ms;
         }
 
-        nav a:hover {
+        nav .main:hover {
             color: #528AAE;
         }
 
-        nav a:hover::before {
+        nav .main:hover::before {
             width: 100%;
         }
     </style>

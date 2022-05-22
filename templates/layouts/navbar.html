@@ -3,7 +3,38 @@
 <head>
 
     <title>Navbar</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
 
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: ghostwhite;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 15px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #528AAE;
+            color: ghostwhite;
+            border-radius: 15px;
+        }
+
+        .dropdown:hover .dropdown-content {display: block;}
+
+    </style>
 </head>
 </html>
 
@@ -16,12 +47,20 @@
 
         <nav>
             <ul>
-                <li><a href={{ url_for('index') }}>Homepage</a></li>
-                <li><a href={{ url_for('industry') }}>Industry Sectors</a></li>
-                <li><a href={{ url_for('crud.crud_login2') }}>User Calendar</a></li>
-                <li><a href="{{ url_for('misc.calendar') }}">Event Announcements</a></li>
-                <li><a href="{{ url_for('crud.crud_login') }}">CRUD Table</a></li>
-                <li><a href="/events/">Admin Login</a></li>
+                <li><a class="main" href={{ url_for('index') }}>Homepage</a></li>
+                <li><a class="main" href={{ url_for('industry') }}>Industry Sectors</a></li>
+                <li><a class="main" href={{ url_for('crud.crud_login2') }}>User Calendar</a></li>
+                <li><a class="main" href="{{ url_for('misc.calendar') }}">Event Announcements</a></li>
+                <li><a class="main" href="{{ url_for('crud.crud_login') }}">CRUD Table</a></li>
+                <li><a class="main" href="/events/">Admin Login</a></li>
+                <li><div class="dropdown">
+                    <a class="main">Dropdown</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div></li>
             </ul>
         </nav>
     </div>
