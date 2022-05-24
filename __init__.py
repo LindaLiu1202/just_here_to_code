@@ -16,6 +16,7 @@ dbURI = 'sqlite:///model/myDB.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = dbURI
 app.config['SECRET_KEY'] = 'SECRET_KEY'
+app.config['UPLOAD_FOLDER'] = 'static/uploads/'
 db = SQLAlchemy(app)
 Migrate(app, db)
 # Setup LoginManager object (app)
