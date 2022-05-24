@@ -83,6 +83,62 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
         nav .main:hover::before {
             width: 100%;
         }
+
+        .section-title h2{
+            text-transform: uppercase;
+            font-size: 40px;
+        }
+        .section-title{
+            margin:3% 0;
+        }
+        .section-title p{
+            font-size: 20px;
+        }
+        .single-team{
+            padding-bottom: 70px;
+            position:relative;
+            z-index:1;
+            overflow: hidden;
+            box-shadow: 5px 5px 15px #000;
+            width: 250px;
+            border-radius: 25px;
+        }
+        .team-img{
+            position: relative;
+            z-index:5;
+            overflow: hidden;
+        }
+        .team-img img{
+            width: 100%;
+            transition: 0.3s;
+            border-radius: 25px 25px 0 0;
+        }
+        .single-team:hover .team-img img{
+            transform: scale(1,1);
+        }
+        .team-content{
+            height: 85px;
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            overflow: hidden;
+            bottom: 0;
+            transition: all 0.4s;
+            background: #9BA7C0;
+            z-index: 5;
+            border-radius: 0 0 25px 25px;
+        }
+        .single-team:hover .team-content{
+            height: 150px;
+        }
+        .team-info{
+            padding: 5px 20px 5px 20px;
+            transition: all .5s;
+        }
+        .display{
+            display: -webkit-box;
+            gap: 30px;
+        }
     </style>
 
 
