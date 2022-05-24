@@ -127,8 +127,9 @@
             <div class="row mb-4 bg-dark text-white rounded-3">
                 <div class="p-5 mb-4 bg-dark text-white rounded-3">
                     <h2>Update</h2>
+                    <p class="text-info"><i class="text-info"> Leave items blank if no change is desired </i></p>
                     <form method="POST" ID="update" action={{url_for('events.update')}} >
-                        <table id="update_table">
+                        <table class="table" id="update_table">
                             <tr>
                                 <th><label for="update_eventid">ID</label></th>
                                 <th><label for="update_name">Name</label></th>

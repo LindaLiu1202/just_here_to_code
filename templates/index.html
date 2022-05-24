@@ -17,7 +17,6 @@
                 color: whitesmoke;
             }
 
-
             h2 {
                 font-family: monospace;
                 font-size: 33px;
@@ -47,7 +46,11 @@
             }
 
             .div-4 {
-                background-color: black;
+                background-color: #0C2D48;
+            }
+
+            .div-4 table p{
+                color: white;
             }
         </style>
 
@@ -197,7 +200,30 @@
     </div>
 
     <div class="div-4">
-        <br><br><br><br><br>
+    <br>
+    <table style="width: 500px;">
+        <tr>
+            <td><p>Quicklinks</p> </td>
+            <td><p>Resources</p></td>
+        </tr>
+        <tr>
+            <td><a href={{ url_for('CTE') }}>What is CTE?</a></td>
+            <td> <a href={{ url_for('crud.crud_login2') }}>User Calendar</a></td>
+        </tr>
+        <tr>
+            <td> <a href={{ url_for('industry') }}>Industry Sectors</a></td>
+            <td><a href={{ url_for('misc.eventcalendar') }}>Event Announcements</a></td>
+        </tr>
+        <tr>
+            <td><a href={{ url_for('team') }}>Meet Our Team</a></td>
+            <td><a href="/events/">Admin Login</a></td>
+        </tr>
+        <tr>
+            <td> </td> {# placeholder #}
+            <td><a href={{ url_for('crud.crud_login') }}>Crud Table</a></td>
+        </tr>
+    </table>
+    <br><br><br>
     </div>
 
 {% endblock %}
