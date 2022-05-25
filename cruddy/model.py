@@ -123,8 +123,7 @@ class Images(UserMixin, db.Model):
             "path": self.path,
             "caption": self.email,
             "authorID": self.authorID,
-            "authorName": self.authorName,
-            "query": "by_alc"  # This is for fun, a little watermark
+            "authorName": self.authorName
         }
 
     # CRUD update: updates users name, password, phone
