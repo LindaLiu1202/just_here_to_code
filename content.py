@@ -1,5 +1,5 @@
 import os
-from __init__ import app
+from __init__ import app, db
 from flask import Blueprint, render_template, request, redirect, url_for
 from flask_login import login_required, current_user
 from werkzeug.utils import secure_filename
@@ -49,6 +49,13 @@ Hack #3 establish a strategy to manage data being stored through Amazon S3 bucke
 # A global variable is used to provide feedback for session to users, but is considered short term solution
 files_uploaded = []
 
+def images_all():
+    table = Images.query.all()
+    json_ready = [item.read() for item in table]
+    return json_ready
+
+def images_by_authorID(authorID):
+    return Images.query.filter_by(authorID=authorID).all()
 
 # Page to upload content page
 @app_content.route('/')
@@ -57,8 +64,9 @@ def content():
     # grab user object (uo) based on current login
     uo = user_by_id(current_user.userID)
     user = uo.read()  # extract user record (Dictionary)
+    sortedtable = images_by_authorID(current_user.userID)
     # load content page
-    return render_template('content.html', user=user, files=files_uploaded)
+    return render_template('content.html', user=user, table=sortedtable)
 
 
 # Notes create/add
@@ -88,3 +96,14 @@ def upload():
         pass
     # reload content page
     return redirect(url_for('content.content'))
+
+if __name__ == "__main__":
+    db.create_all()
+    po = Images(
+        "Hello",
+        '/randomfilepath/image.png',
+        '66',
+        'Daniel'
+    )
+    db.session.add(po)
+    db.session.commit()

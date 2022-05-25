@@ -35,9 +35,12 @@
             <div class="table-responsive">
                 <table class="table">
                     <tbody>
-                    {% for file in files %}
+                    {% for item in table  %}
                         <tr>
-                            <td><image src="{{ file }}" width="150px"></image></td>
+                            <td class="fs-3 text-white"> {{item.caption}}</td>
+                        </tr>
+                        <tr>
+                            <td><image src="{{ item.path }}" width="500px"></image></td>
                         </tr>
                     {% endfor %}
                     </tbody>
