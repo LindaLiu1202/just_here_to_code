@@ -128,8 +128,14 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
             z-index: 5;
             border-radius: 0 0 25px 25px;
         }
+        .team-text{
+            display: none;
+        }
         .single-team:hover .team-content{
-            height: 150px;
+            height: 130px;
+        }
+        .single-team:hover .team-text{
+            display: inherit;
         }
         .team-info{
             padding: 5px 20px 5px 20px;
