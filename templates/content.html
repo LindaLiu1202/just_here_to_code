@@ -36,12 +36,14 @@
                 <table class="table">
                     <tbody>
                     {% for item in table  %}
-                        <tr>
-                            <td class="fs-3 text-white"> {{item.caption}}</td>
-                        </tr>
-                        <tr>
-                            <td><image src="{{ item.path }}" width="500px"></image></td>
-                        </tr>
+
+                    <div class="card my-3" style="width: 36rem;">
+                        <img class="card-img-top" src="{{ item.path }}" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title text-dark">{{item.caption}}</h5>
+                          <a href="#" class="btn btn-primary">Delete (WIP)</a>
+                        </div>
+                      </div>
                     {% endfor %}
                     </tbody>
                 </table>
