@@ -50,6 +50,9 @@ def CTE():
 def calendar():
     return render_template("calendar.html")
 
+@app.route('/photograph/')
+def photograph():
+    return render_template("photograph.html")
 
 # runs the application on the development server
 if __name__ == "__main__":
