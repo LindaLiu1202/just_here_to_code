@@ -57,6 +57,9 @@ def images_all():
 def images_by_authorID(authorID):
     return Images.query.filter_by(authorID=authorID).all()
 
+def image_by_imageID(imageID):
+    return Images.query.filter_by(imageID=imageID).first()
+
 # Page to upload content page
 @app_content.route('/')
 @login_required
@@ -67,6 +70,15 @@ def content():
     sortedtable = images_by_authorID(current_user.userID)
     # load content page
     return render_template('content.html', user=user, table=sortedtable)
+
+@app_content.route('/delete/', methods=["POST"])
+@login_required
+def delete():
+    imageID = request.form['delete-value']
+    image = image_by_imageID(imageID)
+    os.remove(image.path[1:])
+    image.delete()
+    return redirect(url_for('content.content'))
 
 
 # Notes create/add

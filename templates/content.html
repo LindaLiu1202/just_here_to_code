@@ -24,7 +24,7 @@
                         <td><input class="form-control text-dark bg-light" type="text" id="caption" name="caption" /></td>
                     </tr>
                     <tr>
-                        <td><input class="form-control text-dark" type="file" id="filename" name="filename" /></td>
+                        <td><input class="form-control text-dark" type="file" id="filename" name="filename" accept="image/png, image/jpeg, image/jpg, image/gif" /></td>
                         <td><input class="btn btn-primary" type="submit" value="Upload" ></td>
                     </tr>
                     </tbody>
@@ -41,7 +41,10 @@
                         <img class="card-img-top" src="{{ item.path }}" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title text-dark">{{item.caption}}</h5>
-                          <a href="#" class="btn btn-primary">Delete (WIP)</a>
+                          <form id="delete" action = "{{url_for('content.delete')}}" method = "POST">
+                            <input type="hidden" id="delete-value" name="delete-value" value="{{item.imageID}}">
+                            <input type="submit" id="delete-button" name="delete-button" value="Delete" class="btn btn-primary">
+                          </form>
                         </div>
                       </div>
                     {% endfor %}
