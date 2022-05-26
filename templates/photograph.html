@@ -31,7 +31,7 @@
     <div class="container-fluid">
         <div class="row mt-4">
 
-            <div class="item col-sm-6 col-md-4 mb-3">
+            <!-- <div class="item col-sm-6 col-md-4 mb-3">
                 <a href="/static/photograph/photograph1.jpg" class="fancybox" data-fancybox="gallery1">
                     <img src="/static/photograph/photograph1.jpg" width="100%" height="100%">
                 </a>
@@ -65,8 +65,17 @@
                 <a href="/static/photograph/photograph6.JPG" class="fancybox" data-fancybox="gallery1">
                     <img src="/static/photograph/photograph6.JPG" width="100%" height="100%">
                 </a>
+            </div> -->
+
+            {% for item in table %}
+
+            <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="{{item.path}}" class="fancybox" data-fancybox="gallery1">
+                    <img src="{{item.path}}" width="100%" height="100%">
+                </a>
             </div>
 
+            {% endfor %}
         </div>
     </div>
     </body>

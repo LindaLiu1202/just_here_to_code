@@ -71,6 +71,14 @@ def content():
     # load content page
     return render_template('content.html', user=user, table=sortedtable)
 
+'''
+@app_content.route('/gallery/')
+@login_required
+def gallery():
+    images = images_by_authorID(12)
+    return render_template('photograph.html', images=images)
+'''
+
 @app_content.route('/delete/', methods=["POST"])
 @login_required
 def delete():

@@ -12,7 +12,7 @@ from flask import render_template
 from __init__ import app
 from cruddy.app_crud import app_crud
 from cruddy.app_crud_api import app_crud_api
-from content import app_content
+from content import app_content, images_by_authorID
 
 app.register_blueprint(app_crud)
 # app.register_blueprint(app_crud_api)
@@ -54,7 +54,8 @@ def calendar():
 
 @app.route('/photograph/')
 def photograph():
-    return render_template("photograph.html")
+    table = images_by_authorID(12)
+    return render_template("photograph.html", table=table)
 
 # runs the application on the development server
 if __name__ == "__main__":
