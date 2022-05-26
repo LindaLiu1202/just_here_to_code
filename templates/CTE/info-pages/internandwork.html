@@ -4,7 +4,6 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <style>
@@ -25,15 +24,16 @@ h1 {
 body {
     margin: 0;
     height: 100%;
-    background-color: #212529;
+    background-color: #1ab892;
     animation: fadein 2s;
     -moz-animation: fadein 2s;
     -webkit-animation: fadein 2s;
     -o-animation: fadein 2s;
     min-height: 100%;
 }
-
-
+p {
+    font-family: monospace;
+}
 </style>
 
 <!-- <div class="text-white text-center fs-1 my-3">
@@ -41,7 +41,7 @@ body {
 </div> -->
 
 <div class="float-center mx-auto">
-<div class="jumbotron bg-light p-3 mx-auto" style="font-family: 'Montserrat', sans-serif;">
+<div class="jumbotron p-3 mx-auto" style="font-family: 'Montserrat', monospace; background-color: #1ab892; width: 80%">
     <h1 class="display-4">Internships and Work-Based Learning</h1>
     <p class="text-center mx-auto">Work-Based Learning (WBL) are opportunities that allow students to apply learning through practical experience that develops knowledge and skills necessary for success in careers and post-secondary education.</p>
     <hr class="my-4">
@@ -53,7 +53,7 @@ body {
         Internships,
         Work Experience,
         Integrated Projects,
-        Student-Run Enterprises
+        & Student-Run Enterprises.
     </p>
     <div class="d-flex justify-content-center">
       <a target="_blank" class="btn btn-primary mx-auto" href="https://myworkforceconnection.org/wp-content/uploads/2019/08/SDIC_MS-Career-Development-Continuum_2.pdf" role="button">Middle School Career Development Continuum</a>
@@ -63,26 +63,21 @@ body {
 </div>
 </div>
 
-<div id="spacer-1" class="d-flex my-3"></div>
-
-<div class="d-flex justify-content-center mx-auto">
+<div class="d-flex justify-content-center mx-auto" style="margin-top: 3%; background-color: #1ab892">
     <a id="infobutton" class="btn btn-primary btn-lg mx-auto" role="button" onClick="document.getElementById('moreinfo').style.display = 'block'; document.getElementById('infobutton').style.display = 'none';"> More Info </a>
 </div>
 
-<div id="spacer-2" class="d-flex my-5"></div>
 
 <div id="moreinfo" class="float-center mx-auto" style="display: none">
-    <div class="jumbotron bg-light p-3 mx-auto" style="font-family: 'Montserrat', sans-serif;">
+    <div class="jumbotron p-3 mx-auto" style="font-family: 'Montserrat', monospace; background-color: #528AAE">
         <h1 class="display-6"> Work-based learning with Xello</h1>
         <p class="text-center mx-auto">A career assessment tool that helps students connect their strengths, interests and values to their post secondary plan.</p>
         <div class="d-flex justify-content-center my-2"> 
             <iframe type="text/html" width="800" height="450" src="//www.youtube.com/embed/BkPoF94V2lk?fs=1&rel=0&enablejsapi=1&version=3" frameborder="0" allowfullscreen=""></iframe>
         </div>
-        <hr class="my-4">
-
-        <h1 class="display-6 my-3"> Below are videos of some CTE work-based learning interships</h1>
-        <hr class="my-4">
-        <div class="d-flex justify-content-center my-2"> 
+        <h1 class="display-6">CTE Work-Based Learning Internships</h1>
+        <p class="text-center mx-auto"> Here are some videos:</p>
+        <div class="d-flex justify-content-center my-2">
             <iframe type="text/html" width="800" height="450" src="https://www.youtube.com/embed/y32JZMXLlkg?fs=1&amp;rel=0&amp;enablejsapi=1&amp;version=3" frameborder="0" allowfullscreen=""></iframe>
         </div>
         <div class="d-flex justify-content-center my-2"> 
@@ -93,5 +88,5 @@ body {
         </div>
     </div>
 </div>
-
+<br><br><br>
 {% endblock %}
