@@ -1,15 +1,15 @@
 {% extends 'layouts/base.html' %}
 
 {% block body %}
-<div class="container py-4">
+<!-- <div class="d-flex py-4 text-dark bg-light">
     <header class="pb-3 mb-4 text-dark bg-light">
-        <span class=" text-white fs-4">Content Upload Page</span>
+        <span class=" text-dark fs-4">Content Upload Page</span>
     </header>
-</div>
-<div class="container py-4 text-light bg-dark border border-warning">
+</div> -->
+<div class="d-flex py-4 text-light bg-dark">
     <div class="container bg-dark py-4">
         <div class="p-5 mb-4 bg-dark text-light rounded-3">
-            <h2>Content for {{ user.name }}</h2>
+            <h2>Content Upload Page for {{ user.name }} </h2>
             <hr>
             <!--Notes input form, textarea supports multiple lines of input  -->
             <form id="upload" enctype="multipart/form-data" action = "{{url_for('content.upload')}}" method = "POST">
@@ -46,7 +46,7 @@
                 <table class="table">
                     <tbody>
                     {% for item in table  %}
-
+                    
                     <div class="card my-3" style="width: 36rem;">
                         <img class="card-img-top" src="{{ item.path }}" alt="Card image cap">
                         <div class="card-body">

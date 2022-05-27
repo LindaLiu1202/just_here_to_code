@@ -27,7 +27,9 @@
     <body>
     <br>
     <center><h1>Photo Gallery</h1></center>
-
+    {% if current_user.userID == 12 %}
+        <center><a href="/content/" class="btn btn-primary mt-2"> Admin Image Upload </a></center>
+    {% endif %}
     <div class="container-fluid">
         <div class="row mt-4">
 
