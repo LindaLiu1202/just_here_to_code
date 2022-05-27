@@ -128,14 +128,10 @@ class Images(UserMixin, db.Model):
 
     # CRUD update: updates users name, password, phone
     # returns self
-    def update(self, path, caption="", authorName=""):
+    def update(self, caption=""):
         """only updates values with length"""
-        if len(path) > 0:
-            self.path = path
         if len(caption) > 0:
             self.caption = caption
-        if len(authorName) > 0:
-            self.authorName = authorName
         db.session.commit()
         return self
 

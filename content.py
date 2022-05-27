@@ -88,6 +88,15 @@ def delete():
     image.delete()
     return redirect(url_for('content.content'))
 
+@app_content.route('/update/', methods=["POST"])
+@login_required
+def update():
+    imageID = request.form['update-id-value']
+    newCaption = request.form['update-value']
+    image = image_by_imageID(imageID)
+    image.update(newCaption)
+    return redirect(url_for('content.content'))
+
 
 # Notes create/add
 @app_content.route('/upload/', methods=["POST"])
