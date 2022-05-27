@@ -60,6 +60,9 @@ def images_by_authorID(authorID):
 def image_by_imageID(imageID):
     return Images.query.filter_by(imageID=imageID).first()
 
+def image_by_home():
+    return Images.query.filter_by(home=True).first()
+
 # Page to upload content page
 @app_content.route('/')
 @login_required
@@ -97,6 +100,19 @@ def update():
     image.update(newCaption)
     return redirect(url_for('content.content'))
 
+@app_content.route('/homeupdate/', methods=["POST"])
+@login_required
+def homeupdate():
+    imageID = request.form['homeupdate-id-value']
+    image = image_by_imageID(imageID)
+    try:
+        original = image_by_home()
+        original.homeupdate(False)
+    except:
+        pass
+    image.homeupdate(True)
+    return redirect(url_for('content.content'))
+
 
 # Notes create/add
 @app_content.route('/upload/', methods=["POST"])
@@ -113,7 +129,8 @@ def upload():
             request.form.get("caption"),
             url_for('static', filename='uploads/' + fo.filename),
             current_user.userID,
-            current_user.name
+            current_user.name,
+            False
         )
         po.create()
 
@@ -132,7 +149,8 @@ if __name__ == "__main__":
         "Hello",
         '/randomfilepath/image.png',
         '66',
-        'Daniel'
+        'Daniel',
+        False
     )
     db.session.add(po)
     db.session.commit()

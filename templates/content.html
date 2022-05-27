@@ -50,12 +50,18 @@
                     <div class="card my-3" style="width: 36rem;">
                         <img class="card-img-top" src="{{ item.path }}" alt="Card image cap">
                         <div class="card-body">
-                            <form id="delete" action = "{{url_for('content.update')}}" method = "POST">
+                            {% if item.home == True %}
+                            <h5 class="card-title text-dark"><b>CURRENTLY THE HOME PAGE IMAGE</b></h5>
+                            {% endif %}
+                            <form id="update" action = "{{url_for('content.update')}}" method = "POST">
                                 <input type="hidden" id="update-id-value" name="update-id-value" value="{{item.imageID}}">
                                 <input class="form-control text-dark bg-light" type="text" id="update-value" name="update-value" value="{{item.caption}}">
                                 <input type="submit" id="update-button" name="update-button" value="Update Caption" class="btn btn-primary my-2">
                             </form>
-                            <!-- <h5 class="card-title text-dark">{{item.caption}}</h5> -->
+                            <form id="homeupdate" action="{{url_for('content.homeupdate')}}" method="POST">
+                                <input type="hidden" id="homeupdate-id-value" name="homeupdate-id-value" value="{{item.imageID}}">
+                                <input type="submit" id="update-button" name="update-button" value="Assign to Home Page" class="btn btn-primary my-2">
+                            </form>
                             <form id="delete" action = "{{url_for('content.delete')}}" method = "POST">
                                 <input type="hidden" id="delete-value" name="delete-value" value="{{item.imageID}}">
                                 <input type="submit" id="delete-button" name="delete-button" value="Delete" class="btn btn-primary">

@@ -93,11 +93,12 @@ class Images(UserMixin, db.Model):
     caption = db.Column(db.String(255), unique=False, nullable=False)
     authorID = db.Column(db.String(255))
     authorName = db.Column(db.String(255))
+    home = db.Column(db.Boolean, default=False)
     # password = db.Column(db.String(255), unique=False, nullable=False)
     # phone = db.Column(db.String(255), unique=False, nullable=False)
 
     # constructor of a User object, initializes of instance variables within object
-    def __init__(self, caption, path, authorID, authorName):
+    def __init__(self, caption, path, authorID, authorName, home):
         self.caption = caption
         self.path = path
         self.authorID = authorID
@@ -125,6 +126,11 @@ class Images(UserMixin, db.Model):
             "authorID": self.authorID,
             "authorName": self.authorName
         }
+
+    def homeupdate(self, value):
+        self.home = value;
+        db.session.commit()
+        return self
 
     # CRUD update: updates users name, password, phone
     # returns self
