@@ -1,0 +1,81 @@
+{% extends 'layouts/base.html' %}
+
+{% block body %}
+<!-- <div class="d-flex py-4 text-dark bg-light">
+    <header class="pb-3 mb-4 text-dark bg-light">
+        <span class=" text-dark fs-4">Content Upload Page</span>
+    </header>
+</div> -->
+<div class="d-flex py-4 text-light bg-dark">
+    <div class="container bg-dark py-4">
+        <div class="p-5 mb-4 bg-dark text-light rounded-3">
+            <h2>Content Upload Page for {{ user.name }} </h2>
+            <hr>
+            <!--Notes input form, textarea supports multiple lines of input  -->
+            <form id="upload" enctype="multipart/form-data" action = "{{url_for('content.upload')}}" method = "POST">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th><label for="filename">Upload a new file:</label></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><input class="form-control text-dark bg-light" type="text" id="caption" name="caption" /></td>
+                    </tr>
+                    <tr>
+                        <td><input class="form-control text-dark" type="file" id="filename" name="filename" accept="image/png, image/jpeg, image/jpg, image/gif" /></td>
+                        <td><input class="btn btn-primary" type="submit" value="Upload" ></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
+            <script>
+                var uploadField = document.getElementById("filename");
+
+                uploadField.onchange = function() {
+                    if(this.files[0].size > 10485760){
+                    alert("File is too big, please select a file under 10MB");
+                    this.value = "";
+                    };
+                };
+            </script>
+            <hr>
+            <!-- Add something to show what user has uploaded-->
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                    {% for item in table  %}
+                    
+                    <div class="card my-3" style="width: 36rem;">
+                        <img class="card-img-top" src="{{ item.path }}" alt="Card image cap">
+                        <div class="card-body">
+                            {% if item.home == True %}
+                            <h5 class="card-title text-dark"><b>CURRENTLY THE HOME PAGE IMAGE</b></h5>
+                            {% endif %}
+                            <form id="update" action = "{{url_for('content.update')}}" method = "POST">
+                                <input type="hidden" id="update-id-value" name="update-id-value" value="{{item.imageID}}">
+                                <input class="form-control text-dark bg-light" type="text" id="update-value" name="update-value" value="{{item.caption}}">
+                                <input type="submit" id="update-button" name="update-button" value="Update Caption" class="btn btn-primary my-2">
+                            </form>
+                            {% if current_user.userID == 12 %}
+                            <form id="homeupdate" action="{{url_for('content.homeupdate')}}" method="POST">
+                                <input type="hidden" id="homeupdate-id-value" name="homeupdate-id-value" value="{{item.imageID}}">
+                                <input type="submit" id="update-button" name="update-button" value="Assign to Home Page" class="btn btn-success mb-2">
+                            </form>
+                            {% endif %}
+                            <form id="delete" action = "{{url_for('content.delete')}}" method = "POST">
+                                <input type="hidden" id="delete-value" name="delete-value" value="{{item.imageID}}">
+                                <input type="submit" id="delete-button" name="delete-button" value="Delete" class="btn btn-danger">
+                            </form>
+                        </div>
+                      </div>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

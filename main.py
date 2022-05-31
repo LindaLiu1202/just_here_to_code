@@ -12,19 +12,26 @@ from flask import render_template
 from __init__ import app
 from cruddy.app_crud import app_crud
 from cruddy.app_crud_api import app_crud_api
+from content import app_content, images_by_authorID, image_by_home
 
 app.register_blueprint(app_crud)
-app.register_blueprint(app_crud_api)
+# app.register_blueprint(app_crud_api)
 
 # blueprint registration
 app.register_blueprint(app_misc)
 app.register_blueprint(app_events)
+app.register_blueprint(app_content)
 
 
 # connects default URL to render index.html
 @app.route('/')
 def index():
-    return render_template("index.html")
+    image = image_by_home()
+    if image is None:
+        imagepath = "/static/images/header1.png"
+    else:
+        imagepath = image.path
+    return render_template("index.html", headerimage=imagepath)
 
 
 @app.route('/internships-and-work')
@@ -54,7 +61,8 @@ def calendar():
 
 @app.route('/photograph/')
 def photograph():
-    return render_template("photograph.html")
+    table = images_by_authorID(12)
+    return render_template("photograph.html", table=table)
 
 
 @app.route('/pathways/')

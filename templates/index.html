@@ -32,7 +32,7 @@
             }
 
             .div-1 {
-                background-image: url("/static/images/header1.png");
+                background-image: url({{headerimage}});
                 background-size: cover;
                 background-repeat: no-repeat;
             }
@@ -51,6 +51,12 @@
 
             .div-4 table p{
                 color: white;
+            }
+            #socialMedia td{
+                padding: 5px;
+            }
+            ion-icon {
+                font-size: 48px;
             }
         </style>
 
@@ -244,26 +250,22 @@
                 ☏ (858) 521-2800</p></td>
         </tr>
     </table>
-    <table style="width: 60%; color: lightsteelblue; margin-top: 2%; margin-bottom: 3%">
+    <table id="socialMedia" style="width: 60%; color: lightsteelblue; margin-top: 2%; margin-bottom: 3%">
         <tr>
             <td><h3>Social Media</h3></td>
         </tr>
-        <tr>
-            <td><a href="https://twitter.com/PowayUnified">Twitter</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://www.facebook.com/PowayUnified">Facebook</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://www.instagram.com/powayunified/">Instagram</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://www.youtube.com/channel/UCt6sAX_3Kzo4ZxuLJ0r1dww">Youtube</a></td>
+        <tr style="display:flex;">
+            <td><a href="https://twitter.com/PowayUnified"><ion-icon name="logo-twitter"></ion-icon></a></td>
+            <td><a href="https://www.facebook.com/PowayUnified"><ion-icon name="logo-facebook"></ion-icon></a></td>
+            <td><a href="https://www.instagram.com/powayunified/"><ion-icon name="logo-instagram"></ion-icon></a></td>
+            <td><a href="https://www.youtube.com/channel/UCt6sAX_3Kzo4ZxuLJ0r1dww"><ion-icon name="logo-youtube"></ion-icon></a></td>
         </tr>
     </table>
     <br><br><br>
     </div>
 
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 {% endblock %}
 </body>
 </html>
