@@ -60,11 +60,11 @@
                             </form>
                             <form id="homeupdate" action="{{url_for('content.homeupdate')}}" method="POST">
                                 <input type="hidden" id="homeupdate-id-value" name="homeupdate-id-value" value="{{item.imageID}}">
-                                <input type="submit" id="update-button" name="update-button" value="Assign to Home Page" class="btn btn-primary my-2">
+                                <input type="submit" id="update-button" name="update-button" value="Assign to Home Page" class="btn btn-success mb-2">
                             </form>
                             <form id="delete" action = "{{url_for('content.delete')}}" method = "POST">
                                 <input type="hidden" id="delete-value" name="delete-value" value="{{item.imageID}}">
-                                <input type="submit" id="delete-button" name="delete-button" value="Delete" class="btn btn-primary">
+                                <input type="submit" id="delete-button" name="delete-button" value="Delete" class="btn btn-danger">
                             </form>
                         </div>
                       </div>
