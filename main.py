@@ -65,6 +65,11 @@ def photograph():
     return render_template("photograph.html", table=table)
 
 
+@app.route('/college/')
+def college():
+    return render_template("college.html")
+
+
 @app.route('/pathways/')
 def pathways():
     return render_template("CTE/info-pages/pathways.html")
