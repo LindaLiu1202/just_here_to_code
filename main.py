@@ -62,6 +62,10 @@ def photograph():
     table = images_by_authorID(12)
     return render_template("photograph.html", table=table)
 
+@app.route('/college/')
+def college():
+    return render_template("college.html")
+
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
