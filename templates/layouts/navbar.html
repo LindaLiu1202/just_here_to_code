@@ -48,18 +48,27 @@
             <ul>
                 <li><a class="main" href={{ url_for('index') }}>Homepage</a></li>
                 <li><a class="main" href={{ url_for('CTE') }}>What is CTE?</a></li>
-                <li><a class="main" href={{ url_for('industry') }}>Industry Sectors</a></li>
-                <li><a class="main" href={{ url_for('team') }}>Meet Our Team</a></li>
                 <li><a class="main" href={{ url_for('photograph') }}>Gallery</a></li>
                 <li><div class="dropdown">
                     <a class="main">Resources</a>
                     <div class="dropdown-content">
-                        <a href={{ url_for('internwork') }}>Internships and Work</a>
-                        <a href={{ url_for('college') }}>Early College Credits</a>
+                        <a class="main" href={{ url_for('team') }}>Meet Our Team</a>
                         <a href={{ url_for('crud.crud_login2') }}>User Calendar</a>
                         <a href={{ url_for('misc.eventcalendar') }}>Event Announcements</a>
                         <a href="/events/">Admin Login</a>
                         <a href={{ url_for('crud.crud_page') }}>CRUD Table</a>
+                    </div>
+                </div>
+                </li>
+                <li><div class="dropdown">
+                    <a class="main">Information</a>
+                    <div class="dropdown-content">
+                        <a href={{ url_for('CTE') }}>What is CTE?</a>
+                        <a href={{ url_for('industry') }}>Industry Sectors</a>
+                        <a href={{ url_for('internwork') }}>Internships & Work</a>
+                        <a href={{ url_for('misc.eventcalendar') }}>What's Happening in CTE?</a>
+                        <a href={{ url_for('crud.crud_login') }}>Completion & Recognition</a>
+                        <a href={{ url_for('college') }}>Early College Credit</a>
                     </div>
                 </div>
                 </li>
