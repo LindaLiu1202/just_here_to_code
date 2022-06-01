@@ -54,7 +54,7 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 
         nav li {
             display: inline-block;
-            margin-left: 75px;
+            margin-left: 85px;
             padding-top: 25px;
             position: relative;
         }
@@ -145,6 +145,22 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
         .display{
             display: -webkit-box;
             gap: 30px;
+        }
+        .colors table td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .colors td:nth-child(1){
+            background-color: #02c66c;
+        }
+        .colors td:nth-child(2){
+            background-color: #54c8eb;
+        }
+        .colors td:nth-child(3){
+            background-color: #d3e15b;
+        }
+        .colors td:hover {
+            background-color: #eea236;
         }
     </style>
 
