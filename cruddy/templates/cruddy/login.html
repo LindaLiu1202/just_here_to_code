@@ -16,14 +16,14 @@
         <div class="container py-4" style="background-color: #1E3F66; border-radius: 15px; margin-top: -2%">
             <br>
             <div class="p-5 mb-4 bg-light text-dark rounded-3" style="border-radius: 15px">
-                <form method="POST" ID="login" action={{url_for('crud.crud_login')}}>
+                <form class="form-group" method="POST" ID="login" action={{url_for('crud.crud_login')}}>
                     <table>
                         <tr><th><label for="email">Email</label></th></tr>
-                        <tr><td><input type="email" id='email' name="email" size="20" required></td></tr>
+                        <tr><td><input class="form-control" type="email" id='email' name="email" size="20" required></td></tr>
                         <tr><th><label for="password">Password</label></th></tr>
-                        <tr><td><input type="password" id="password" name="password" size="20" required></td></tr>
-                        <tr><th><br><input type="submit" value="Submit"></th></tr>
-                        <tr><td><a href={{url_for('crud.crud_authorize')}}>Sign Up</a></td></tr>
+                        <tr><td><input class="form-control" type="password" id="password" name="password" size="20" required></td></tr>
+                        <tr><th><br><input class="btn btn-primary" type="submit" value="Log In"></th></tr>
+                        <tr><td><a class="btn btn-info" href={{url_for('crud.crud_authorize')}}>Go to sign-up page</a></td></tr>
                     </table>
                 </form>
             </div>
