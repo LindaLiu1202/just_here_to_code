@@ -1,14 +1,13 @@
 {% extends "layouts/base.html" %}
-
-{% block body %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
     <title>Early College Credits</title>
-    <style>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+            <style>
         body{
-            background-color:white;
+            background-color: #528AAE;
         }
         h1 {
             font-family: 'Monsterrat', monospace;
@@ -16,41 +15,29 @@
         p{
             font-size: 19px;
         }
-        table td{
-            border: 1px solid black;
-            padding: 10px;
-        }
-        td:nth-child(1){
-            background-color: #02c66c;
-        }
-        td:nth-child(2){
-            background-color: #54c8eb;
-        }
-        td:nth-child(3){
-            background-color: #d3e15b;
-        }
-        td:hover {
-            background-color: #eea236;
-        }
     </style>
 </head>
+    {% block body %}
 <body>
 <br>
 <center>
-<br><h1>Early College Credits</h1>
-<p>Welcome to the Poway Unified District's Early College Credit website.  On this website you will be given information regarding our three programs that provide pathways for students to earn Early College Credit.</p>
-<br><img src="https://www.powayusd.com/getmedia/51042864-4759-49a5-b50d-e0e07c3247c1/ECC-Graphic.png.aspx?width=750&height=421">
+    <div class="jumbotron p-3 mx-auto" style="font-family: 'Montserrat', monospace; width: 80%; margin-top: 1%; padding-bottom: 15px; text-align: center">
+        <h1 class="display-4">Early College Credit</h1>
+        <p  class="text-center mx-auto">Welcome to the Poway Unified District's Early College Credit section. Here, you will be given information regarding our three programs that provide pathways for students to earn Early College Credit.</p>
+        <hr class="my-4">
+    </div>
+<img style="width: 900px" src="https://www.powayusd.com/getmedia/51042864-4759-49a5-b50d-e0e07c3247c1/ECC-Graphic.png.aspx?width=750&height=421">
 
 
-<br><br><br><br>
+<br><br><br><br><br>
 <h1>Student Enrollment in Early College Credit Opportunities</h1>
 <br>
-<img src="/static/info-pages/enrollment.png" style="width:55%">
+<img style="width:900px" src="/static/info-pages/enrollment.png">
 
 
-<br><br><br>
+<br><br><br><br><br>
 <h1>Advanced Placement Program Information</h1>
-<table>
+<table class="colors">
     <tr>
         <td><br><h4>Why Consider Advanced Placement?</h4>
             <ul>
@@ -63,7 +50,7 @@
         <td><h4>How to Receive AP Credit?</h4>
             <ul>
                 <li>Work with your school counselor to enroll in AP courses at your high school</li>
-                <li>ollow your high school's guidelines to sign up for the AP Exam (usually offered in May)</li>
+                <li>Follow your high school's guidelines to sign up for the AP Exam (usually offered in May)</li>
                 <li>Request to have your AP test scores sent to the college/university you decide to attend</li>
             </ul>
         </td>
@@ -78,14 +65,14 @@
     </tr>
 </table>
 
-<br><br><br>
+<br><br><br><br><br>
 <h1>List of Advanced Placement Courses in PUSD</h1>
 <img src="https://www.powayusd.com/getmedia/8be89efb-fdbe-483d-85b4-4677ace7b441/Advanced-Placement-Courses-(1).jpg.aspx?width=1200&height=927">
 
 
-    <br><br><br>
+<br><br><br><br><br>
     <h1>Articulation Program Information</h1>
-    <table>
+    <table class="colors">
         <tr>
             <td><br><h4>What is Articulation Credit by Exam?</h4>
                 <ul>
@@ -119,8 +106,7 @@
             </td>
         </tr>
     </table>
-
-
+<br><br><br>
 </center>
 </body>
 </html>

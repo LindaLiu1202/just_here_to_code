@@ -22,6 +22,7 @@ app.register_blueprint(app_misc)
 app.register_blueprint(app_events)
 app.register_blueprint(app_content)
 
+
 # connects default URL to render index.html
 @app.route('/')
 def index():
@@ -32,39 +33,47 @@ def index():
         imagepath = image.path
     return render_template("index.html", headerimage=imagepath)
 
+
 @app.route('/internships-and-work')
 def internwork():
-    return render_template('internandwork.html')
+    return render_template('CTE/info-pages/internandwork.html')
+
 
 @app.route('/industry-sectors/')
 def industry():
-    return render_template("CTE/industry-sectors/industrysectors.html")
-
-@app.route('/authorize')
-def authorize():
-    return render_template("authorize.html")
+    return render_template("CTE/info-pages/industrysectors.html")
 
 
 @app.route('/team')
 def team():
     return render_template("team.html")
 
+
 @app.route('/CTE')
 def CTE():
     return render_template("CTE/info-pages/CTE.html")
 
+
 @app.route('/calendar/')
 def calendar():
     return render_template("calendar.html")
+
 
 @app.route('/photograph/')
 def photograph():
     table = images_by_authorID(12)
     return render_template("photograph.html", table=table)
 
+
 @app.route('/college/')
 def college():
     return render_template("college.html")
+
+
+@app.route('/pathways/')
+def pathways():
+    return render_template("CTE/info-pages/pathways.html")
+
 
 # runs the application on the development server
 if __name__ == "__main__":

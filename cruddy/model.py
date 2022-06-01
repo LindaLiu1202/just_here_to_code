@@ -103,6 +103,7 @@ class Images(UserMixin, db.Model):
         self.path = path
         self.authorID = authorID
         self.authorName = authorName
+        self.home = home
 
     # CRUD create/add a new record to the table
     # returns self or None on error
@@ -122,7 +123,7 @@ class Images(UserMixin, db.Model):
         return {
             "imageID": self.imageID,
             "path": self.path,
-            "caption": self.email,
+            "caption": self.caption,
             "authorID": self.authorID,
             "authorName": self.authorName
         }

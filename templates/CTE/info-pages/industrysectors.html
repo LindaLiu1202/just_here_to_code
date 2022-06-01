@@ -8,7 +8,16 @@
 </style>
 
 {% block body %}
-<div class="row justify-content-center mt-5" style="width: 99%">
+
+    <div class="jumbotron p-3 mx-auto" style="font-family: 'Montserrat', monospace; width: 80%; margin-top: 3%; padding-bottom: 15px; text-align: center">
+        <h1 class="display-4">Industry Sectors</h1>
+        <p  class="text-center mx-auto">Click on the boxes below to learn more about each Industry Sector.</p>
+        <hr class="my-4">
+    </div>
+    <center>
+        <img style="padding: 0 30px; height: 600px; width: auto; margin-right: auto; margin-left: auto; margin-top: -1%" src="{{ url_for('static', filename='images/sectors.png') }}" alt="sectors">
+    </center>
+        <div class="row justify-content-center mt-5" style="width: 99%; margin-top: -2%">
 
 <button type="button" class="btn btn-primary col-3 m-2" data-bs-toggle="modal" data-bs-target="#agricultureModal">
   <div class="row"><img class="imagefit" src="/static/industry-sectors/is-icons-agNatural.png"></div>

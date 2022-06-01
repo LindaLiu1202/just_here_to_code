@@ -90,93 +90,188 @@
     </div>
 
     <div class="div-2">
-    <center>
-        <table style="width: 80%; position: center; margin-left: 7.5%">
-            <tr>
-                <td>
-                    {#<svg style="margin-top: -30%" width="290" height="340">
-                        <rect width="300" height="340" style="fill:ghostwhite"></rect>
-                    </svg>#}
-                    <br><br><br><br><br><br><br><br><br>
-                </td>
-                <td>
-                    {#<svg style="margin-top: -30%" width="290" height="340">
-                        <rect width="300" height="340" style="fill:ghostwhite"></rect>
-                    </svg>#}
-                    <br><br><br><br><br><br><br><br><br>
-                </td>
-                <td>
-                    {#<svg style="margin-top: -30%" width="290" height="340">
-                        <rect width="300" height="340" style="fill:ghostwhite"></rect>
-                    </svg>#}
-                    <br><br><br><br><br><br><br><br><br>
-                </td>
-            </tr>
-        </table>
-    </center>
-        <img src="static/images/box1.png" style="height: 340px; margin-left: 13.9%; margin-top: -21.5%; position: absolute">
-        <img src="static/images/box2.png" style="height: 340px; margin-left: 40.6%; margin-top: -21.5%; position: absolute">
-        <img src="static/images/box3.png" style="height: 340px; margin-left: 67.3%; margin-top: -21.5%; position: absolute">
+        <br><br><br><br><br><br><br><br><br>
+        <img src="static/images/box1.png" style="height: 340px; margin-left: 14.4%; margin-top: -21.5%; position: absolute">
+        <img src="static/images/box2.png" style="height: 340px; margin-left: 41.1%; margin-top: -21.5%; position: absolute">
+        <img src="static/images/box3.png" style="height: 340px; margin-left: 67.8%; margin-top: -21.5%; position: absolute">
         <br><br><br>
     </div>
 
-
-    <div class="div-2">
-        <br><br><br><br><br>
-    </div>
-
     <div class="div-3">
-        <br><br><br><br><br>
+        <br><br><br>
+        <table style="width: 60%; padding: 10px; position: center; margin-left: 22%;">
+            <tr>
+                <td>
+                    <div class="display">
+                        <div class="single-team">
+                            <a href="{{ url_for('CTE') }}" style="color: black">
+                            <div class="team-img">
+                                <img src="/static/images/preview1.png">
+                            </div>
+                            <div class="team-content" style="background-color: #1ab892">
+                                <div class="team-info" style="margin-top: 5%">
+                                    <h5>What is CTE?</h5>
+                                </div>
+                                <p class="team-text">An overview of what CTE is all about.</p>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br><br>
+                </td>
+                <td>
+                    <div class="display">
+                        <div class="single-team">
+                            <a href="{{ url_for('industry') }}" style="color: black">
+                                <div class="team-img">
+                                    <img src="/static/images/preview2.png">
+                                </div>
+                                <div class="team-content" style="background-color: #D3E15BFF">
+                                    <div class="team-info" style="margin-top: 5%">
+                                        <h5>Industry Sectors</h5>
+                                    </div>
+                                    <p class="team-text">Different career pathways offered by CTE.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br><br>
+                </td>
+                <td>
+                    <div class="display">
+                        <div class="single-team">
+                            <a href="{{ url_for('internwork') }}" style="color: black">
+                                <div class="team-img">
+                                    <img src="/static/images/preview3.png">
+                                </div>
+                                <div class="team-content" style="background-color: #3A57A8FF">
+                                    <div class="team-info" style="margin-top: 5%">
+                                        <h5>Internships & Work-Based Learning</h5>
+                                    </div>
+                                    <p class="team-text">Applying learning through practical experience.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="display">
+                        <div class="single-team">
+                            <a href="{{ url_for('misc.eventcalendar') }}" style="color: black">
+                                <div class="team-img">
+                                    <img src="/static/images/preview4.png">
+                                </div>
+                                <div class="team-content" style="background-color: #3a57a8">
+                                    <div class="team-info" style="margin-top: 5%">
+                                        <h5>What's Happening in CTE?</h5>
+                                    </div>
+                                    <p class="team-text">View our current events and announcements.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="display">
+                        <div class="single-team">
+                            <a href="{{ url_for('pathways') }}" style="color: black">
+                                <div class="team-img">
+                                    <img src="/static/images/preview5.png">
+                                </div>
+                                <div class="team-content" style="background-color: #1ab892">
+                                    <div class="team-info" style="margin-top: 5%">
+                                        <h5>Pathway Completion & Recognition</h5>
+                                    </div>
+                                    <p class="team-text">Requires and benefits of completion.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="display">
+                        <div class="single-team">
+                            <a href="{{ url_for('college') }}" style="color: black">
+                                <div class="team-img">
+                                    <img src="/static/images/preview6.png">
+                                </div>
+                                <div class="team-content" style="background-color: #d3e15b">
+                                    <div class="team-info" style="margin-top: 5%">
+                                        <h5>Early College Credit</h5>
+                                    </div>
+                                    <p class="team-text">Our programs that provide pathways for students.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    <br><br><br>
     </div>
 
     <div class="div-4" style="display: flex">
-    <br>
-    <table style="width: 500px" id="quicklinks">
-        <tr>
-            <td><p>Quicklinks</p> </td>
-            <td><p>Resources</p></td>
-        </tr>
-        <tr>
-            <td><a href={{ url_for('CTE') }}>What is CTE?</a></td>
-            <td><a href={{ url_for('crud.crud_login2') }}>User Calendar</a></td>
-        </tr>
-        <tr>
-            <td><a href={{ url_for('industry') }}>Industry Sectors</a></td>
-            <td><a href={{ url_for('misc.eventcalendar') }}>Event Announcements</a></td>
-        </tr>
-        <tr>
-            <td><a href={{ url_for('team') }}>Meet Our Team</a></td>
-            <td><a href="/events/">Admin Login</a></td>
-        </tr>
-        <tr>
-            <td><a href={{ url_for('photograph') }}>Photographs</a></td>
-            <td><a href={{ url_for('crud.crud_login') }}>Crud Table</a></td>
-        </tr>
-    </table>
-    <table style="width: 300px">
-        <tr>
-            <td><p>Address</p></td>
-        </tr>
-        <tr>
-            <td><p>POWAY UNIFIED SCHOOL DISTRICT <br>
-                15250 Avenue of Science<br>
-                San Diego, CA 92128<br>
-                ☎ (858) 521-2800</p></td>
-        </tr>
-    </table>
-    <table id="socialMedia">
-        <tr>
-            <td><p>Social Media</p></td>
-        </tr>
-        <tr style="display:flex;">
-            <td><a href="https://twitter.com/PowayUnified"><ion-icon name="logo-twitter"></ion-icon></a></td>
-            <td><a href="https://www.facebook.com/PowayUnified"><ion-icon name="logo-facebook"></ion-icon></a></td>
-            <td><a href="https://www.instagram.com/powayunified/"><ion-icon name="logo-instagram"></ion-icon></a></td>
-            <td><a href="https://www.youtube.com/channel/UCt6sAX_3Kzo4ZxuLJ0r1dww"><ion-icon name="logo-youtube"></ion-icon></a></td>
-        </tr>
-    </table>
-
-    <br><br><br>
+        <table style="width: 60%; color: lightsteelblue; margin-left: 8%; margin-top: 2%; margin-bottom: 3%">
+            <tr>
+                <td><h3>Quicklinks</h3> </td>
+            </tr>
+            <tr>
+                <td><a href={{ url_for('CTE') }}>What is CTE?</a></td>
+            </tr>
+            <tr>
+                <td><a href={{ url_for('industry') }}>Industry Sectors</a></td>
+            </tr>
+            <tr>
+                <td><a href={{ url_for('team') }}>Meet Our Team</a></td>
+            </tr>
+            <tr>
+                <td><a href={{ url_for('photograph') }}>Photographs</a></td>
+            </tr>
+        </table>
+        <table style="width: 60%; color: lightsteelblue; margin-top: 2%; margin-bottom: 3%">
+            <tr>
+                <td><h3>Resources</h3></td>
+            </tr>
+            <tr>
+                <td><a href={{ url_for('crud.crud_login2') }}>User Calendar</a></td>
+            </tr>
+            <tr>
+                <td><a href={{ url_for('misc.eventcalendar') }}>Event Announcements</a></td>
+            </tr>
+            <tr>
+                <td><a href="/events/">Admin Login</a></td>
+            </tr>
+            <tr>
+                <td><a href={{ url_for('crud.crud_login') }}>Crud Table</a></td>
+            </tr>
+        </table>
+        <table style="width: 60%; color: lightsteelblue; margin-top: 2%; margin-bottom: 3%">
+            <tr>
+                <td><h3>Address</h3></td>
+            </tr>
+            <tr>
+                <td><p>POWAY UNIFIED SCHOOL DISTRICT <br>
+                    15250 Avenue of Science<br>
+                    San Diego, CA 92128<br>
+                    ☏ (858) 521-2800</p></td>
+            </tr>
+        </table>
+        <table id="socialMedia" style="width: 60%; color: lightsteelblue; margin-top: 2%; margin-bottom: 3%">
+            <tr>
+                <td><h3>Social Media</h3></td>
+            </tr>
+            <tr style="display:flex;">
+                <td><a href="https://twitter.com/PowayUnified"><ion-icon name="logo-twitter"></ion-icon></a></td>
+                <td><a href="https://www.facebook.com/PowayUnified"><ion-icon name="logo-facebook"></ion-icon></a></td>
+                <td><a href="https://www.instagram.com/powayunified/"><ion-icon name="logo-instagram"></ion-icon></a></td>
+                <td><a href="https://www.youtube.com/channel/UCt6sAX_3Kzo4ZxuLJ0r1dww"><ion-icon name="logo-youtube"></ion-icon></a></td>
+            </tr>
+        </table>
+        <br><br><br>
     </div>
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

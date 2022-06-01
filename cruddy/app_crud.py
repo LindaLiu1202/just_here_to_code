@@ -47,15 +47,28 @@ def crud_login():
     return render_template("login.html")
 
 
+@app_crud.route('/crud_page/', methods=["GET", "POST"])
+@login_required
+def crud_page():
+    # obtains form inputs and fulfills login requirements
+    # if request.form:
+    #     email = request.form.get("email")
+    #     password = request.form.get("password")
+    #     if login(email, password):  # zero index [0] used as email is a tuple
+    #         return redirect('/crud_page/')
+
+    # if not logged in, show the login page
+    return render_template("crud.html", table=users_all())
+
 @app_crud.route('/login2/', methods=["GET", "POST"])
 @login_required
 def crud_login2():
     # obtains form inputs and fulfills login requirements
-    if request.form:
-        email = request.form.get("email")
-        password = request.form.get("password")
-        if login(email, password):  # zero index [0] used as email is a tuple
-            return render_template("calendar.html")
+    # if request.form:
+    #     email = request.form.get("email")
+    #     password = request.form.get("password")
+    #     if login(email, password):  # zero index [0] used as email is a tuple
+    #         return render_template("calendar.html")
 
     # if not logged in, show the login page
     return render_template("calendar.html")
